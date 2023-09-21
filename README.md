@@ -6,3 +6,6 @@ Ketua Kelompok: Putra Agung A.M Sitorus
 Anggota 1: Muhammad Ismail Azmi - 21/473264/TK/52149
 Anggota 2: Putra Agung A.M Sitorus - 21/474928/TK/52423
 Anggota 3: Izzat Arroyyan - 21/477795/TK/52626
+
+Class Diagram:
+![img](https://github.com/izzatarroyyan12/SharenCare/blob/main/junpro.jpg)
