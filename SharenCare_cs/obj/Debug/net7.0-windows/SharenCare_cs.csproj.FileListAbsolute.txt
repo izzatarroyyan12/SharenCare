@@ -1,0 +1,13 @@
+C:\Users\muham\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.csproj.AssemblyReference.cache
+C:\Users\muham\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\muham\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\muham\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs_MarkupCompile.cache
+C:\Users\muham\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs_MarkupCompile.lref
+C:\Users\muham\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\muham\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.g.resources
+C:\Users\muham\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muham\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.AssemblyInfoInputs.cache
+C:\Users\muham\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.AssemblyInfo.cs
+C:\Users\muham\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.csproj.CoreCompileInputs.cache
+C:\Users\muham\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\refint\SharenCare_cs.dll
+C:\Users\muham\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.pdb
