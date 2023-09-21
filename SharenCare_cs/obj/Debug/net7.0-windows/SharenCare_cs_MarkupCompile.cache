@@ -1,5 +1,5 @@
 ﻿SharenCare_cs
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\muham\SharenCare\SharenCare_cs\App.xaml
 11407045341
 
-11-1222283528
+9-27854741
 198-1175457984
 MainWindow.xaml;
 
-False
+True
 
