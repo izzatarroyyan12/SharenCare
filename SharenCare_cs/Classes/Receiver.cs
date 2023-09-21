@@ -6,21 +6,37 @@ using System.Threading.Tasks;
 
 namespace SharenCare_cs.Classes
 {
-    class Receiver
+    class Receiver : User
     {
         private int receiverId;
         private List<Donation> receivedItems;
 
-        public int receiver_Id { get { return receiverId; } }
-        public List<Donation> received_Items { get { return receivedItems; } set { receivedItems = value; } }
-
-        public void takeItem()
+        public int receiverId
         {
-            //logic
+            get { return receiverId; } set { receiverId = value; }
         }
-        public void searchItem()
+
+        public List<Donation> receivedItems
         {
-            //logic
+            get { return receivedItems; }
+            private set { receivedItems = value; }
+        }
+
+        public Receiver(int id, string username, string email, string password, string displayName, string location)
+            : base(id, username, email, password, displayName, location)
+        {
+            this.receiverId = id;
+            this.receivedItems = new List<Donation>();
+        }
+
+        public void TakeItem(Donation item)
+        {
+            // Implementasi logika pengambilan item
+        }
+
+        public void SearchItem(Donation item)
+        {
+            // Implementasi logika pencarian item
         }
     }
 }
