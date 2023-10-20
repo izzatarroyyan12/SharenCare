@@ -8,19 +8,19 @@
     "net7.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\muham\\.nuget\\packages\\": {}
+    "C:\\Users\\ismailazmi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\muham\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj",
+      "projectUniqueName": "C:\\Users\\ismailazmi\\sharencare\\SharenCare_cs\\SharenCare_cs.csproj",
       "projectName": "SharenCare_cs",
-      "projectPath": "C:\\Users\\muham\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj",
-      "packagesPath": "C:\\Users\\muham\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\muham\\SharenCare\\SharenCare_cs\\obj\\",
+      "projectPath": "C:\\Users\\ismailazmi\\sharencare\\SharenCare_cs\\SharenCare_cs.csproj",
+      "packagesPath": "C:\\Users\\ismailazmi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ismailazmi\\sharencare\\SharenCare_cs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\muham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ismailazmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
