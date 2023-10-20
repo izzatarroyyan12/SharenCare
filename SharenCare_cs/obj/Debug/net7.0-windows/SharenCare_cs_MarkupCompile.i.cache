@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\ismailazmi\sharencare\SharenCare_cs\App.xaml
-11407045341
+31130175450
 
-11-1222283528
+131789447123
 198947991364
-MainWindow.xaml;
+MainWindow.xaml;Window1.xaml;Window2.xaml;
 
-False
+True
 
