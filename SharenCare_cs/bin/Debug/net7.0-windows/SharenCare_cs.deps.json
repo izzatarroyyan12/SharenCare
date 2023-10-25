@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "SharenCare_cs/1.0.0": {
+        "runtime": {
+          "SharenCare_cs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SharenCare_cs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -8,72 +8,75 @@ namespace SharenCare_cs.Classes
 {
     public class User
     {
-        private int id;
-        private string username;
-        private string email;
-        private string password;
-        private string displayName;
-        private string location;
-        private bool loggedIn;
+        private int id_;
+        private string username_;
+        private string email_;
+        private string password_;
+        private string displayName_;
+        private string location_;
+        private bool loggedIn_;
 
-        public int id
+        public int Id
         {
-            get { return id; } set { id = value; }
+            get { return id_; }
+            set { id_ = value; }
         }
 
-        public string username
+        public string Username
         {
-            get { return username; } set { username = value; }
+            get { return username_; }
+            set { username_ = value; }
         }
 
-        public string email
+        public string Email
         {
-            get { return email; } set { email = value; }
+            get { return email_; }
+            set { email_ = value; }
         }
 
-        public string password
+        public string Password
         {
-            get { return password; }
-            set { password = value; }
+            get { return password_; }
+            set { password_ = value; }
         }
 
-        public string displayName
+        public string DisplayName
         {
-            get { return displayName; }
-            set { displayName = value; }
+            get { return displayName_; }
+            set { displayName_ = value; }
         }
 
-        public string location
+        public string Location
         {
-            get { return location; }
-            set { location = value; }
+            get { return location_; }
+            set { location_ = value; }
         }
 
-        public bool loggedIn
+        public bool LoggedIn
         {
-            get { return loggedIn; }
-            private set { loggedIn = value; }
+            get { return loggedIn_; }
+            private set { loggedIn_ = value; }
         }
 
         public User(int id, string username, string email, string password, string displayName, string location)
         {
-            this.id = id;
-            this.username = username;
-            this.email = email;
-            this.password = password;
-            this.displayName = displayName;
-            this.location = location;
-            this.loggedIn = false;
+            this.Id = id;
+            this.Username = username;
+            this.Email = email;
+            this.Password = password;
+            this.DisplayName = displayName;
+            this.Location = location;
+            this.LoggedIn = false;
         }
 
         public User Register(string username, string email, string password)
         {
-            // Implementasi logika registrasi
+            return null;
         }
 
         public bool Login(string username, string password)
         {
-            // Implementasi logika login
+            return true;
         }
 
         public void Logout()
@@ -83,4 +86,3 @@ namespace SharenCare_cs.Classes
         }
     }
 }
-

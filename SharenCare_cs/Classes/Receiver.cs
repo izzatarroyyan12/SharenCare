@@ -8,25 +8,26 @@ namespace SharenCare_cs.Classes
 {
     class Receiver : User
     {
-        private int receiverId;
-        private List<Donation> receivedItems;
+        private int receiverId_;
+        private List<Donation> receivedItems_;
 
-        public int receiverId
+        public int ReceiverId
         {
-            get { return receiverId; } set { receiverId = value; }
+            get { return receiverId_; }
+            set { receiverId_ = value; }
         }
 
-        public List<Donation> receivedItems
+        public List<Donation> ReceivedItems
         {
-            get { return receivedItems; }
-            private set { receivedItems = value; }
+            get { return receivedItems_; }
+            private set { receivedItems_ = value; }
         }
 
         public Receiver(int id, string username, string email, string password, string displayName, string location)
             : base(id, username, email, password, displayName, location)
         {
-            this.receiverId = id;
-            this.receivedItems = new List<Donation>();
+            this.ReceiverId = id;
+            this.ReceivedItems = new List<Donation>();
         }
 
         public void TakeItem(Donation item)

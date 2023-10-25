@@ -8,46 +8,46 @@ namespace SharenCare_cs.Classes
 {
     class Admin
     {
-        private int id;
-        private string username;
-        private string email;
-        private string password;
+        private int adminId;
+        private string adminUsername;
+        private string adminEmail;
+        private string adminPassword;
 
-        public int id
+        public int Id
         {
-            get { return id; }
-            set { id = value; }
+            get { return adminId; }
+            set { adminId = value; }
         }
 
-        public string username
+        public string Username
         {
-            get { return username; }
-            set { username = value; }
+            get { return adminUsername; }
+            set { adminUsername = value; }
         }
 
-        public string email
+        public string Email
         {
-            get { return email; }
-            set { email = value; }
+            get { return adminEmail; }
+            set { adminEmail = value; }
         }
 
-        public string password
+        public string Password
         {
-            get { return password; }
-            set { password = value; }
+            get { return adminPassword; }
+            set { adminPassword = value; }
         }
 
         public Admin(int id, string username, string email, string password)
         {
-            this.id = id;
-            this.username = username;
-            this.email = email;
-            this.password = password;
+            this.Id = id;
+            this.Username = username;
+            this.Email = email;
+            this.Password = password;
         }
 
         public bool Login(string username, string password)
         {
-            // Implementasi logika login admin
+            return true;
         }
 
         public void ManageUsers()
