@@ -394,5 +394,18 @@ FodyWeavers.xsd
 *.msm
 *.msp
 
+# Build and generated files
+**/bin/
+**/obj/
+**/packages/
+**/node_modules/
+**/Debug/
+**/Release/
+**/*.suo
+**/*.user
+**/*.sln.cache
+**/*.vs/
+
+
 # JetBrains Rider
 *.sln.iml
