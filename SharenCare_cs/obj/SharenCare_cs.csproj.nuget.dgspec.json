@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\muham\\Documents\\JuniorProject\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj": {}
+    "D:\\Kuliah\\Junior Project\\Project\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\muham\\Documents\\JuniorProject\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj": {
+    "D:\\Kuliah\\Junior Project\\Project\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\muham\\Documents\\JuniorProject\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj",
+        "projectUniqueName": "D:\\Kuliah\\Junior Project\\Project\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj",
         "projectName": "SharenCare_cs",
-        "projectPath": "C:\\Users\\muham\\Documents\\JuniorProject\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj",
-        "packagesPath": "C:\\Users\\muham\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\muham\\Documents\\JuniorProject\\SharenCare\\SharenCare_cs\\obj\\",
+        "projectPath": "D:\\Kuliah\\Junior Project\\Project\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj",
+        "packagesPath": "C:\\Users\\MSI GAMING\\.nuget\\packages\\",
+        "outputPath": "D:\\Kuliah\\Junior Project\\Project\\SharenCare\\SharenCare_cs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\muham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MSI GAMING\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

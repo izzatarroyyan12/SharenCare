@@ -59,3 +59,27 @@ C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.pdb
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.genruntimeconfig.cache
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\ref\SharenCare_cs.dll
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.exe
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.deps.json
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.runtimeconfig.json
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.dll
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.pdb
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\MainWindow.g.cs
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window1.g.cs
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window2.g.cs
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\App.g.cs
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs_MarkupCompile.cache
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs_MarkupCompile.lref
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\MainWindow.baml
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window1.baml
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window2.baml
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.g.resources
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.AssemblyInfoInputs.cache
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.AssemblyInfo.cs
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.csproj.CoreCompileInputs.cache
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.dll
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\refint\SharenCare_cs.dll
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.pdb
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.genruntimeconfig.cache
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\ref\SharenCare_cs.dll

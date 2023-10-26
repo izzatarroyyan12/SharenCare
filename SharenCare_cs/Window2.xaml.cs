@@ -51,5 +51,13 @@ namespace SharenCare_cs
 
 
         }
+        //LoginLabel
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            // Membuka jendela baru "Window1"
+            Window1 window1 = new Window1();
+            window1.Show();
+            this.Close(); // Menutup jendela saat berpindah ke Window1
+        }
     }
 }
