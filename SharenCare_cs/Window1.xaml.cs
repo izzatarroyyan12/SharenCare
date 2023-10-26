@@ -16,15 +16,6 @@ namespace SharenCare_cs
 {
     public partial class Window1 : Window
     {
-        public Window1()
-        {
-            InitializeComponent();
-            // Menambahkan handler acara untuk label "Register here!" jika label ada dalam file XAML
-            if (RegisterLabel != null)
-            {
-                RegisterLabel.MouseLeftButtonDown += RegisterLabel_Click;
-            }
-        }
 
         private void RegisterLabel_Click(object sender, MouseButtonEventArgs e)
         {
