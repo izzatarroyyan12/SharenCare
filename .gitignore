@@ -411,5 +411,24 @@ bin/
 obj/
 .suo
 
+# Ignore NuGet package folders
+packages/
+package/
+
+# Visual Studio 2017+
+.vs2017/
+vs2017/
+.vs2019/
+vs2019/
+
+# Rider
+.idea/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+
+
 # JetBrains Rider
 *.sln.iml
