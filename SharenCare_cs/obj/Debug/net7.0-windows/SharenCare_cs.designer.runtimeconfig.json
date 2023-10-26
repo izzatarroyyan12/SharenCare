@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\muham\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\muham\\.nuget\\packages"
+      "C:\\Users\\MSI GAMING\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\MSI GAMING\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

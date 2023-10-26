@@ -8,11 +8,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="img\Gambar bulat.png" />
+    <None Remove="img\Icon Email.png" />
+    <None Remove="img\Icon Password.png" />
+    <None Remove="img\Kotak kiri.png" />
+    <None Remove="img\SDGS 1.png" />
+    <None Remove="img\SDGS 2.png" />
     <None Remove="kucing.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="img\Gambar bulat.png" />
+    <Resource Include="img\Icon Password.png" />
+    <Resource Include="img\Kotak kiri.png" />
     <Resource Include="img\kucing.jpg" />
+    <Resource Include="img\SDGS 1.png" />
+    <Resource Include="img\SDGS 2.png" />
   </ItemGroup>
 
 </Project>
