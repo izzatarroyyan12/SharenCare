@@ -16,8 +16,25 @@ namespace SharenCare_cs
 {
     public partial class Window1 : Window
     {
+        public Window1()
+        {
+            InitializeComponent();
+        }
 
         private void RegisterLabel_Click(object sender, MouseButtonEventArgs e)
+        {
+            // Membuka jendela baru "Window2"
+            Window2 window2 = new Window2();
+            window2.Show();
+            this.Close(); // Menutup jendela saat berpindah ke Window2
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             // Membuka jendela baru "Window2"
             Window2 window2 = new Window2();
