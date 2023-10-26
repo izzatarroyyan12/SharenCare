@@ -6,21 +6,38 @@ using System.Threading.Tasks;
 
 namespace SharenCare_cs.Classes
 {
-    class Donor
+    class Donor : User
     {
-        private int donorId;
-        private List<Donation> donatedItem;
+        private int donorId_;
+        private List<Donation> donatedItem_;
 
-        public int donor_Id { get { return donorId; } }
-        public List<Donation> donated_Item { get { return donatedItem; } set { donatedItem = value; } }
-
-        public void donateItem()
+        public int DonorId
         {
-            //logic
+            get { return donorId_; }
+            set { donorId_ = value; }
         }
-        public void editItem()
+
+        public List<Donation> DonatedItem
         {
-            //logic
+            get { return donatedItem_; }
+            private set { donatedItem_ = value; }
+        }
+
+        public Donor(int id, string username, string email, string password, string displayName, string location)
+            : base(id, username, email, password, displayName, location)
+        {
+            this.DonorId = id;
+            this.DonatedItem = new List<Donation>();
+        }
+
+        public void DonateItem(Donation item)
+        {
+            // Implementasi logika pendonasian item
+        }
+
+        public void EditItem(Donation item)
+        {
+            // Implementasi logika pengeditan item
         }
     }
 }
