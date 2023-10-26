@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "f6sEtnzbn6Z8asFoUCBW249tNKNMWwcJt1gOhioQOW901Qgnjds2x4cT1z//tf3m32I6ZhlGi/l+kNb2c7OdPw==",
+  "success": true,
+  "projectFilePath": "D:\\Kuliah\\Junior Project\\Project\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MSI GAMING\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\MSI GAMING\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}
