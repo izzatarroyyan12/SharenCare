@@ -406,6 +406,10 @@ FodyWeavers.xsd
 **/*.sln.cache
 **/*.vs/
 
+.vs/
+bin/
+obj/
+.suo
 
 # JetBrains Rider
 *.sln.iml
