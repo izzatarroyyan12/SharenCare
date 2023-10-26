@@ -49,6 +49,7 @@ namespace SharenCare_cs
             string userDetails = $"User ID: {newUser.Id}\nUsername: {newUser.Username}\nEmail: {newUser.Email}\nDisplayName: {newUser.DisplayName}\nLocation: {newUser.Location}";
             MessageBox.Show("User Details:\n" + userDetails, "User Registration Successful");
 
+
         }
     }
 }
