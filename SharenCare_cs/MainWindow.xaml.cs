@@ -40,5 +40,10 @@ namespace SharenCare_cs
             window1.Show();
             this.Close(); // Menutup jendela saat berpindah ke Window2
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
