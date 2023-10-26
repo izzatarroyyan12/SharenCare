@@ -8,6 +8,8 @@ namespace SharenCare_cs.Classes
 {
     public class User
     {
+        private static int nextID = 1;
+
         private int id_;
         private string username_;
         private string email_;
@@ -60,7 +62,8 @@ namespace SharenCare_cs.Classes
 
         public User(int id, string username, string email, string password, string displayName, string location)
         {
-            this.Id = id;
+            this.Id = nextID;
+            nextID++;
             this.Username = username;
             this.Email = email;
             this.Password = password;
@@ -69,7 +72,7 @@ namespace SharenCare_cs.Classes
             this.LoggedIn = false;
         }
 
-        public User Register(string username, string email, string password)
+        public User Register(string username, string email, string password, string displayName, string location)
         {
             return null;
         }
