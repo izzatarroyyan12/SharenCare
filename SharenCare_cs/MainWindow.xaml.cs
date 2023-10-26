@@ -24,5 +24,21 @@ namespace SharenCare_cs
         {
             InitializeComponent();
         }
+
+        private void Register_Click(object sender, RoutedEventArgs e)
+        {
+            // Membuka jendela baru "Window2"
+            Window2 window2 = new Window2();
+            window2.Show();
+            this.Close(); // Menutup jendela saat berpindah ke Window2
+        }
+
+        private void Login_Click(object sender, RoutedEventArgs e)
+        {
+            // Membuka jendela baru "Window2"
+            Window1 window1 = new Window1();
+            window1.Show();
+            this.Close(); // Menutup jendela saat berpindah ke Window2
+        }
     }
 }

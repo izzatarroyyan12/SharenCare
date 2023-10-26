@@ -14,14 +14,16 @@ using System.Windows.Shapes;
 
 namespace SharenCare_cs
 {
-    /// <summary>
-    /// Interaction logic for Window1.xaml
-    /// </summary>
     public partial class Window1 : Window
     {
-        public Window1()
+
+        private void RegisterLabel_Click(object sender, MouseButtonEventArgs e)
         {
-            InitializeComponent();
+            // Membuka jendela baru "Window2"
+            Window2 window2 = new Window2();
+            window2.Show();
+            this.Close(); // Menutup jendela saat berpindah ke Window2
         }
     }
 }
+
