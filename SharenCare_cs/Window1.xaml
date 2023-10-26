@@ -24,7 +24,7 @@
         </Button>
         <Label Content="Forgot Email/Password?" HorizontalAlignment="Left" Margin="491,293,0,0" VerticalAlignment="Top"/>
         <Label Content="Don't have an account?" HorizontalAlignment="Left" Margin="440,380,0,0" VerticalAlignment="Top"/>
-        <Label Content="Register here!" HorizontalAlignment="Left" Margin="574,380,0,0" VerticalAlignment="Top" Foreground="Blue"/>
+        <Label x:Name="RegisterLabel" Content="Register here!" HorizontalAlignment="Left" Margin="574,380,0,0" VerticalAlignment="Top" Foreground="Blue"/>
         <Image Source="kucing.jpg" HorizontalAlignment="Left" Height="222" Margin="107,0,0,0" VerticalAlignment="Center" Width="261"/>
 
     </Grid>
