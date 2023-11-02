@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Npgsql;
 
 namespace SharenCare_cs
 {
@@ -20,9 +21,28 @@ namespace SharenCare_cs
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private NpgsqlConnection? connection;
         public MainWindow()
         {
             InitializeComponent();
+            InitializeDatabaseConnection();
+        }
+        private void InitializeDatabaseConnection()
+        {
+            // Replace with your actual connection string
+            string connectionString = "Host=localhost;Port=5432;Database=SharenCare;Username=postgres;Password=postgres";
+
+            try
+            {
+                connection = new NpgsqlConnection(connectionString);
+                connection.Open();
+                MessageBox.Show("Database connection established.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error connecting to the database: " + ex.Message);
+            }
         }
 
         private void Register_Click(object sender, RoutedEventArgs e)
