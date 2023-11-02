@@ -17,61 +17,83 @@ using Npgsql;
 
 namespace SharenCare_cs
 {
-    /// <summary>
-    /// Interaction logic for Window2.xaml
-    /// </summary>
     public partial class Window2 : Window
     {
-        private NpgsqlConnection connection;
+        private readonly NpgsqlConnection connection;
+
         public Window2(NpgsqlConnection connection)
         {
             InitializeComponent();
             this.connection = connection;
         }
 
-
         private void CreateAccount_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                //Check connection
-                if (connection.State == ConnectionState.Closed)
-                {
-                    connection.Open();
-                }
+                OpenConnection();
 
-                //Operations
-                NpgsqlCommand cmd = new NpgsqlCommand("SELECT insert_user(@_userName, @_displayName, @_email, @_location, @_password)", connection);
-                cmd.Parameters.AddWithValue("@_userName", usernameTB.Text);
-                cmd.Parameters.AddWithValue("@_displayName", displayNameTB.Text);
-                cmd.Parameters.AddWithValue("@_email", emailTB.Text);
-                cmd.Parameters.AddWithValue("@_location", locationTB.Text);
-                cmd.Parameters.AddWithValue("@_password", passwordTB.Text);
+                using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT insert_user(@_userName, @_displayName, @_email, @_location, @_password)", connection))
+                {
+                    cmd.Parameters.AddWithValue("@_userName", usernameTB.Text);
+                    cmd.Parameters.AddWithValue("@_displayName", displayNameTB.Text);
+                    cmd.Parameters.AddWithValue("@_email", emailTB.Text);
+                    cmd.Parameters.AddWithValue("@_location", locationTB.Text);
+                    cmd.Parameters.AddWithValue("@_password", passwordTB.Text);
 
-                int result = (int)cmd.ExecuteScalar();
-                if (result == 1)
-                {
-                    MessageBox.Show("User registered successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    int result = (int)cmd.ExecuteScalar();
+
+                    if (result == 1)
+                    {
+                        ShowMessageBox("User registered successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                    else
+                    {
+                        ShowMessageBox("Failed to register user.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Failed to register user.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-                //Close connection
-                connection.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Failed to Register User", MessageBoxButton.OK, MessageBoxImage.Error);
+                ShowMessageBox("Error: " + ex.Message, "Failed to Register User", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            finally
+            {
+                CloseConnection();
             }
         }
-        //LoginLabel
+
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            // Membuka jendela baru "Window1"
+            OpenWindow1();
+            Close();
+        }
+
+        private void OpenConnection()
+        {
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+        }
+
+        private void CloseConnection()
+        {
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
+
+        private void ShowMessageBox(string message, string title, MessageBoxButton button, MessageBoxImage icon)
+        {
+            MessageBox.Show(message, title, button, icon);
+        }
+
+        private void OpenWindow1()
+        {
             Window1 window1 = new Window1(connection);
             window1.Show();
-            this.Close(); // Menutup jendela saat berpindah ke Window1
         }
     }
 }

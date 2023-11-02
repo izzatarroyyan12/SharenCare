@@ -17,7 +17,8 @@ namespace SharenCare_cs
 {
     public partial class Window1 : Window
     {
-        private NpgsqlConnection connection;
+        private readonly NpgsqlConnection connection;
+
         public Window1(NpgsqlConnection connection)
         {
             InitializeComponent();
@@ -26,10 +27,10 @@ namespace SharenCare_cs
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            // Membuka jendela baru "Window2"
+            // Open a new instance of "Window2"
             Window2 window2 = new Window2(connection);
             window2.Show();
-            this.Close(); // Menutup jendela saat berpindah ke Window2
+            this.Close(); // Close the current window when switching to Window2
         }
 
         private void Login_Click(object sender, RoutedEventArgs e)
@@ -48,8 +49,8 @@ namespace SharenCare_cs
             {
                 MessageBox.Show("Login failed. Please check your username and password.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-
         }
+
         private bool CheckLogin(string username, string password)
         {
             try
@@ -59,13 +60,15 @@ namespace SharenCare_cs
                     connection.Open();
                 }
 
-                NpgsqlCommand cmd = new NpgsqlCommand("SELECT COUNT(*) FROM snc_users WHERE username = @username AND password = @password", connection);
-                cmd.Parameters.AddWithValue("@username", username);
-                cmd.Parameters.AddWithValue("@password", password);
+                using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT COUNT(*) FROM snc_users WHERE username = @username AND password = @password", connection))
+                {
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@password", password);
 
-                int count = Convert.ToInt32(cmd.ExecuteScalar());
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
 
-                return count > 0; // If count is greater than 0, the user with the provided username and password exists.
+                    return count > 0; // If count is greater than 0, the user with the provided username and password exists.
+                }
             }
             catch (Exception ex)
             {
