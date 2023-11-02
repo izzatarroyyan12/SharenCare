@@ -20,7 +20,7 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <Button Content="Create Account" HorizontalAlignment="Left" Margin="188,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="21" Width="111" Click="Button_Click" FontFamily="FONTSPRING DEMO - Neometric" FontWeight="DemiBold">
+        <Button Content="Create Account" HorizontalAlignment="Left" Margin="188,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="21" Width="111" Click="CreateAccount_Click" FontFamily="FONTSPRING DEMO - Neometric" FontWeight="DemiBold">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="#01d1dc" />
