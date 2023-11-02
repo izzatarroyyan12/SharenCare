@@ -1,6 +1,7 @@
 ﻿using SharenCare_cs.Classes;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Npgsql;
 
 namespace SharenCare_cs
 {
@@ -20,36 +22,48 @@ namespace SharenCare_cs
     /// </summary>
     public partial class Window2 : Window
     {
-        public Window2()
+        private NpgsqlConnection connection;
+        public Window2(NpgsqlConnection connection)
         {
             InitializeComponent();
+            this.connection = connection;
         }
 
-        private int nextUserID = 1;
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void CreateAccount_Click(object sender, RoutedEventArgs e)
         {
-            string username = usernameTB.Text;
-            string email = emailTB.Text;
-            string password = passwordTB.Text;
-            string displayName = displayNameTB.Text;
-            string location = locationTB.Text;
-
-            // validasi input
-            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+            try
             {
-                MessageBox.Show("Please fill in all required fields.");
-                return;
+                //Check connection
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+                }
+
+                //Operations
+                NpgsqlCommand cmd = new NpgsqlCommand("SELECT insert_user(@_displayName, @_email, @_location, @_password, @_userName)", connection);
+                cmd.Parameters.AddWithValue("@_displayName", displayNameTB.Text);
+                cmd.Parameters.AddWithValue("@_email", emailTB.Text);
+                cmd.Parameters.AddWithValue("@_location", locationTB.Text);
+                cmd.Parameters.AddWithValue("@_password", passwordTB.Text);
+                cmd.Parameters.AddWithValue("@_userName", usernameTB.Text);
+
+                int result = (int)cmd.ExecuteScalar();
+                if (result == 1)
+                {
+                    MessageBox.Show("User registered successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Failed to register user.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                //Close connection
+                connection.Close();
             }
-
-            User newUser = new User(nextUserID, username, email, password, displayName, location);
-            nextUserID++;
-
-            // tes nampilin hasil input
-            string userDetails = $"User ID: {newUser.Id}\nUsername: {newUser.Username}\nEmail: {newUser.Email}\nDisplayName: {newUser.DisplayName}\nLocation: {newUser.Location}";
-            MessageBox.Show("User Details:\n" + userDetails, "User Registration Successful");
-
-
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Failed to Register User", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
         //LoginLabel
         private void Button_Click_1(object sender, RoutedEventArgs e)

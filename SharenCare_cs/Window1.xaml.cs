@@ -11,20 +11,21 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using Npgsql;
 namespace SharenCare_cs
 {
     public partial class Window1 : Window
     {
+        private NpgsqlConnection connection;
         public Window1()
         {
             InitializeComponent();
         }
 
-        private void RegisterLabel_Click(object sender, MouseButtonEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             // Membuka jendela baru "Window2"
-            Window2 window2 = new Window2();
+            Window2 window2 = new Window2(connection);
             window2.Show();
             this.Close(); // Menutup jendela saat berpindah ke Window2
         }
@@ -34,13 +35,6 @@ namespace SharenCare_cs
 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            // Membuka jendela baru "Window2"
-            Window2 window2 = new Window2();
-            window2.Show();
-            this.Close(); // Menutup jendela saat berpindah ke Window2
-        }
     }
 }
 
