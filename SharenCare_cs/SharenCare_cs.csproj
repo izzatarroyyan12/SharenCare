@@ -18,6 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Npgsql" Version="7.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="img\Gambar bulat.png" />
     <Resource Include="img\Icon Password.png" />
     <Resource Include="img\Kotak kiri.png" />
