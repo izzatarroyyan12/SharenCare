@@ -56,7 +56,7 @@ namespace SharenCare_cs
         private void Login_Click(object sender, RoutedEventArgs e)
         {
             // Membuka jendela baru "Window2"
-            Window1 window1 = new Window1();
+            Window1 window1 = new Window1(connection);
             window1.Show();
             this.Close(); // Menutup jendela saat berpindah ke Window2
         }

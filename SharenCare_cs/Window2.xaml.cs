@@ -41,12 +41,12 @@ namespace SharenCare_cs
                 }
 
                 //Operations
-                NpgsqlCommand cmd = new NpgsqlCommand("SELECT insert_user(@_displayName, @_email, @_location, @_password, @_userName)", connection);
+                NpgsqlCommand cmd = new NpgsqlCommand("SELECT insert_user(@_userName, @_displayName, @_email, @_location, @_password)", connection);
+                cmd.Parameters.AddWithValue("@_userName", usernameTB.Text);
                 cmd.Parameters.AddWithValue("@_displayName", displayNameTB.Text);
                 cmd.Parameters.AddWithValue("@_email", emailTB.Text);
                 cmd.Parameters.AddWithValue("@_location", locationTB.Text);
                 cmd.Parameters.AddWithValue("@_password", passwordTB.Text);
-                cmd.Parameters.AddWithValue("@_userName", usernameTB.Text);
 
                 int result = (int)cmd.ExecuteScalar();
                 if (result == 1)
@@ -69,7 +69,7 @@ namespace SharenCare_cs
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             // Membuka jendela baru "Window1"
-            Window1 window1 = new Window1();
+            Window1 window1 = new Window1(connection);
             window1.Show();
             this.Close(); // Menutup jendela saat berpindah ke Window1
         }
