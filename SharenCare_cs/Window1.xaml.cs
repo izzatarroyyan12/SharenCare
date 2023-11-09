@@ -13,16 +13,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Npgsql;
+
 namespace SharenCare_cs
 {
     public partial class Window1 : Window
     {
+        private readonly Authentication authentication;
         private readonly NpgsqlConnection connection;
 
         public Window1(NpgsqlConnection connection)
         {
             InitializeComponent();
             this.connection = connection;
+            this.authentication = new Authentication(connection);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -38,9 +41,14 @@ namespace SharenCare_cs
             string enteredUsername = usernameTextBox.Text;
             string enteredPassword = passwordTextBox.Text;
 
-            // Perform the login check (you need to replace this with your actual logic)
-            bool isAuthenticated = CheckLogin(enteredUsername, enteredPassword);
+            // Perform the login check using encapsulated logic
+            bool isAuthenticated = authentication.CheckLogin(enteredUsername, enteredPassword);
 
+            ShowLoginResult(isAuthenticated);
+        }
+
+        private void ShowLoginResult(bool isAuthenticated)
+        {
             if (isAuthenticated)
             {
                 MessageBox.Show("Login successful.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -51,31 +59,53 @@ namespace SharenCare_cs
             }
         }
 
-        private bool CheckLogin(string username, string password)
+        private class Authentication
         {
-            try
+            private readonly NpgsqlConnection connection;
+
+            public Authentication(NpgsqlConnection connection)
             {
-                if (connection.State == ConnectionState.Closed)
+                this.connection = connection;
+            }
+
+            public bool CheckLogin(string username, string password)
+            {
+                try
                 {
-                    connection.Open();
+                    if (connection.State == ConnectionState.Closed)
+                    {
+                        connection.Open();
+                    }
+
+                    using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT COUNT(*) FROM snc_users WHERE username = @username AND password = @password", connection))
+                    {
+                        cmd.Parameters.AddWithValue("@username", username);
+                        cmd.Parameters.AddWithValue("@password", password);
+
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                        return count > 0; // If count is greater than 0, the user with the provided username and password exists.
+                    }
                 }
-
-                using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT COUNT(*) FROM snc_users WHERE username = @username AND password = @password", connection))
+                catch (Exception ex)
                 {
-                    cmd.Parameters.AddWithValue("@username", username);
-                    cmd.Parameters.AddWithValue("@password", password);
-
-                    int count = Convert.ToInt32(cmd.ExecuteScalar());
-
-                    return count > 0; // If count is greater than 0, the user with the provided username and password exists.
+                    MessageBox.Show("Error: " + ex.Message, "Login Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return false;
+                }
+                finally
+                {
+                    CloseConnection();
                 }
             }
-            catch (Exception ex)
+
+            private void CloseConnection()
             {
-                MessageBox.Show("Error: " + ex.Message, "Login Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                return false;
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
             }
         }
     }
-}
 
+}
