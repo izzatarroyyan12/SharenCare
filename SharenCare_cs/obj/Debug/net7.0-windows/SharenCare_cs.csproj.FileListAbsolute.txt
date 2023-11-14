@@ -87,3 +87,7 @@ D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windo
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\Npgsql.dll
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.csproj.CopyComplete
+C:\Users\pafams\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\pafams\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\Npgsql.dll
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.csproj.AssemblyReference.cache
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.csproj.CopyComplete
