@@ -1,0 +1,73 @@
+﻿<Window x:Class="SharenCare_cs.AdminDashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SharenCare_cs"
+        mc:Ignorable="d"
+        Title="AdminDashboard" Height="450" Width="800">
+    <Grid>
+        <Image Source="img/Background.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="498" Width="800"/>
+        <Rectangle HorizontalAlignment="Center" Height="368" VerticalAlignment="Center" Width="745" StrokeThickness="0">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FFEAC2" Opacity="0.3"/>
+            </Rectangle.Fill>
+            <Rectangle.RadiusX>30</Rectangle.RadiusX>
+            <Rectangle.RadiusY>30</Rectangle.RadiusY>
+            <Rectangle.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="5" Opacity="0.7"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Center" Height="240" VerticalAlignment="Top" Width="664" StrokeThickness="0" Margin="0,105,0,0">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#D2C1A2" Opacity="0.5"/>
+            </Rectangle.Fill>
+            <Rectangle.RadiusX>30</Rectangle.RadiusX>
+            <Rectangle.RadiusY>30</Rectangle.RadiusY>
+            <Rectangle.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="5" Opacity="0.7"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Image Source="img/Rounded Bawah.png" Margin="325,-87,325,99"/>
+        <Label Content="Admin Dashboard" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" FontSize="40" Foreground="#E2E2E2" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="4" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Users Data" Margin="349,105,349,284" FontSize="18" Foreground="#E2E2E2" FontWeight="Bold"/>
+        <Button x:Name="btnShowData" Content="Show Data" HorizontalAlignment="Left" Margin="514,357,0,0" VerticalAlignment="Top" Width="97" Height="33" FontWeight="SemiBold" FontSize="15" Foreground="#E2E2E2" Background="#7A7469">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                        <Border.Effect>
+                            <DropShadowEffect Color="Black" BlurRadius="0" ShadowDepth="2" Opacity="0.5"/>
+                        </Border.Effect>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="635,357,0,0" VerticalAlignment="Top" Width="97" Height="33" FontWeight="SemiBold" FontSize="15" Foreground="#E2E2E2" Background="#7A7469">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                        <Border.Effect>
+                            <DropShadowEffect Color="Black" BlurRadius="0" ShadowDepth="2" Opacity="0.5"/>
+                        </Border.Effect>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{x:Null}" Margin="86,155,86,106">
+            <DataGrid.Template>
+                <ControlTemplate TargetType="DataGrid">
+                    <Border Background="White" CornerRadius="20">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </DataGrid.Template>
+        </DataGrid>
+
+    </Grid>
+</Window>
