@@ -8,10 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="img\Background.png" />
+    <None Remove="img\FotoAnak.png" />
     <None Remove="img\Gambar bulat.png" />
     <None Remove="img\Icon Email.png" />
     <None Remove="img\Icon Password.png" />
+    <None Remove="img\IconEmail.png" />
+    <None Remove="img\IconPassword.png" />
     <None Remove="img\Kotak kiri.png" />
+    <None Remove="img\Rounded Bawah.png" />
     <None Remove="img\SDGS 1.png" />
     <None Remove="img\SDGS 2.png" />
     <None Remove="kucing.jpg" />
@@ -22,10 +27,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="img\Background.png" />
+    <Resource Include="img\FotoAnak.png" />
     <Resource Include="img\Gambar bulat.png" />
-    <Resource Include="img\Icon Password.png" />
+    <Resource Include="img\IconEmail.png" />
+    <Resource Include="img\IconPassword.png" />
     <Resource Include="img\Kotak kiri.png" />
     <Resource Include="img\kucing.jpg" />
+    <Resource Include="img\Rounded Bawah.png" />
     <Resource Include="img\SDGS 1.png" />
     <Resource Include="img\SDGS 2.png" />
   </ItemGroup>

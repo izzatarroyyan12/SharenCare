@@ -7,85 +7,97 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="passwordTextBox" HorizontalAlignment="Left" Margin="501,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="198" Height="33">
-            <TextBox.Style>
-                <Style TargetType="TextBox">
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="TextBox">
-                                <Border Background="#4d01d1dc" BorderThickness="1" CornerRadius="15">
-                                    <ScrollViewer x:Name="PART_ContentHost" />
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </TextBox.Style>
-        </TextBox>
-        <TextBox x:Name="usernameTextBox" HorizontalAlignment="Left" Margin="500,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="33">
-            <TextBox.Style>
-                <Style TargetType="TextBox">
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="TextBox">
-                                <Border Background="#4d01d1dc" BorderThickness="1" CornerRadius="15">
-                                    <ScrollViewer x:Name="PART_ContentHost" Margin="0,-1,0,0" />
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </TextBox.Style>
-        </TextBox>
-        <Label Content="Login to your account" HorizontalAlignment="Left" Margin="481,101,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" FontFamily="FONTSPRING DEMO - Neometric" Foreground="#1A3845"/>
-        <Button Content="LOGIN" HorizontalAlignment="Left" Margin="569,253,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="21" Width="60" Click="Login_Click">
-            <Button.Effect>
-                <DropShadowEffect Color="Gray" ShadowDepth="2" BlurRadius="5" Opacity="0.5"/>
-            </Button.Effect>
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Setter Property="Background" Value="#01d1dc" />
-                    <Setter Property="Foreground" Value="White" />
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="Button">
-                                <Border Background="{TemplateBinding Background}" CornerRadius="5">
-                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </Button.Style>
-        </Button>
-        <Label Content="Don't have an account?" HorizontalAlignment="Left" Margin="492,288,0,0" VerticalAlignment="Top" FontSize="12" Foreground="#4A5C63"/>
-        <Image Margin="123,93,400,93" Source="/img/Gambar bulat.png" Stretch="Fill"/>
-        <Image Margin="0,-1,726,1" Source="/img/Kotak kiri.png" Stretch="Fill"/>
-        <Ellipse HorizontalAlignment="Left" Height="39" Margin="360,49,0,0" Stroke="Transparent" VerticalAlignment="Top" Width="40" Fill="#01d1dc" />
-        <Ellipse HorizontalAlignment="Left" Height="79" Margin="405,314,0,0" Stroke="Transparent" VerticalAlignment="Top" Width="79" Fill="#ffd861" />
-        <Ellipse HorizontalAlignment="Left" Height="100" Margin="224,383,0,0" Stroke="Transparent" VerticalAlignment="Top" Width="101" Fill="#ff6c78" />
-        <Button Content="Register here!" HorizontalAlignment="Left" Margin="626,292,0,0" VerticalAlignment="Top" FontSize="12" Width="74" Height="18" Click="Button_Click_1">
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Setter Property="Background" Value="#00000000 " />
-                    <Setter Property="Foreground" Value="#ffd85f" />
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="Button">
-                                <Border Background="{TemplateBinding Background}" CornerRadius="5">
-                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Cursor" Value="Hand" />
-                        </Trigger>
-                    </Style.Triggers>
+            <Image Source="img/Background.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="468" Width="800"/>
+            <Rectangle Fill="#FFEAC2" Margin="57,50,408,62" Opacity="0.3" RadiusX="30" RadiusY="30"/>
+            <Image Source="img/IconEmail.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="20" Width="20" Margin="77,161,0,0"/>
+            <Image Source="img/IconPassword.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="20" Width="20" Margin="77,202,0,0"/>
+            <Image Source="img/FotoAnak.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="220" Width="219" Margin="496,109,0,0"/>
+            <TextBox x:Name="passwordTextBox" HorizontalAlignment="Left" Margin="174,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="TextBox">
+                                    <Border Background="#7A7469" BorderThickness="1" CornerRadius="15">
+                                        <Border.Effect>
+                                            <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="3" Opacity="0.7" Direction="270"/>
+                                        </Border.Effect>
+                                        <ScrollViewer x:Name="PART_ContentHost" />
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+            <TextBox x:Name="usernameTextBox" HorizontalAlignment="Left" Margin="174,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="TextBox">
+                                    <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Margin="0,0,0,5">
+                                        <Border.Effect>
+                                            <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="3" Opacity="0.7" Direction="270"/>
+                                        </Border.Effect>
+                                        <ScrollViewer x:Name="PART_ContentHost" Margin="0,-1,0,0" />
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+            <Label Content="Login to your account" HorizontalAlignment="Left" Margin="84,87,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#E2E2E2" FontWeight="Bold">
+                <Label.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
+                </Label.Effect>
+            </Label>
+            <Button Content="Login" HorizontalAlignment="Left" Margin="168,272,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="30" Width="90" Click="Login_Click" FontWeight="Bold" FontSize="16">
+                <Button.Effect>
+                    <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="1" Opacity="0.5" Direction="280"/>
+                </Button.Effect>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="#7A7469" />
+                        <Setter Property="Foreground" Value="White" />
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" CornerRadius="15">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Label Content="Don't have an account?" HorizontalAlignment="Left" Margin="105,311,0,0" VerticalAlignment="Top" FontSize="12" Foreground="#E2E2E2" FontWeight="SemiBold"/>
+            <Button Content="Register here!" HorizontalAlignment="Left" Margin="245,315,0,0" VerticalAlignment="Top" FontSize="12" Width="74" Height="18" Click="Button_Click_1" Foreground="#FFEAC2" FontWeight="Bold">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#00000000 " />
+                        <Setter Property="Foreground" Value="#ffd85f" />
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand" />
+                            </Trigger>
+                        </Style.Triggers>
 
-                </Style>
-            </Button.Style>
-        </Button>
-    </Grid>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Label Content="Email" HorizontalAlignment="Left" Margin="99,156,0,0" VerticalAlignment="Top" Foreground="#E2E2E2" FontWeight="SemiBold" FontSize="13"/>
+            <Label Content="Password" HorizontalAlignment="Left" Margin="99,198,0,0" VerticalAlignment="Top" Foreground="#E2E2E2" FontWeight="SemiBold" FontSize="13"/>
+        </Grid>
 </Window>

@@ -20,15 +20,20 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <Button Content="Create Account" HorizontalAlignment="Left" Margin="188,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="21" Width="111" Click="CreateAccount_Click" FontFamily="FONTSPRING DEMO - Neometric" FontWeight="DemiBold">
+        <Image Source="img/Background.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="468" Width="800"/>
+        <Rectangle Fill="#FFEAC2" Margin="398,33,55,10" Opacity="0.3" RadiusX="30" RadiusY="30"/>
+        <Button Content="Create Account" HorizontalAlignment="Left" Margin="498,344,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="36" Width="136" Click="CreateAccount_Click" FontWeight="Bold" FontSize="16">
+            <Button.Effect>
+                <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="1" Opacity="0.5" Direction="280"/>
+            </Button.Effect>
             <Button.Style>
                 <Style TargetType="Button">
-                    <Setter Property="Background" Value="#01d1dc" />
+                    <Setter Property="Background" Value="#7A7469" />
                     <Setter Property="Foreground" Value="White" />
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="Button">
-                                <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="15">
                                     <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                                 </Border>
                             </ControlTemplate>
@@ -37,13 +42,17 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Label Content="Register" HorizontalAlignment="Left" Margin="179,46,0,0" VerticalAlignment="Top" FontSize="25" FontWeight="Bold" Foreground="#1A3845"/>
-        <Label Content="Already have an account?" HorizontalAlignment="Left" Margin="133,90,0,0" VerticalAlignment="Top" FontSize="12" Foreground="#1A3845"/>
-        <Button x:Name="LoginLabel" Content="Login here!" HorizontalAlignment="Left" Margin="267,94,0,0" VerticalAlignment="Top" FontSize="12" Width="86" Height="18" Click="Button_Click_1">
+        <Label Content="Register" HorizontalAlignment="Left" Margin="513,47,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#E2E2E2" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Already have an account?" HorizontalAlignment="Left" Margin="458,307,0,0" VerticalAlignment="Top" FontSize="12" Foreground="#E2E2E2" FontWeight="SemiBold"/>
+        <Button x:Name="LoginLabel" Content="Login here!" HorizontalAlignment="Left" Margin="599,311,0,0" VerticalAlignment="Top" FontSize="12" Width="86" Height="18" Click="Button_Click_1" FontWeight="Bold">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="#00000000 " />
-                    <Setter Property="Foreground" Value="#ffd85f" />
+                    <Setter Property="Foreground" Value="#FFEAC2" />
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="Button">
@@ -62,24 +71,101 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Image Source="img/Gambar bulat.png" HorizontalAlignment="Left" Height="300" Margin="491,0,0,0" VerticalAlignment="Center" Width="300"/>
-        <TextBox x:Name="usernameTB" HorizontalAlignment="Left" Margin="206,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="29" Style="{StaticResource CommonTextBoxStyle}" />
-        <TextBox x:Name="emailTB" HorizontalAlignment="Left" Margin="206,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="29" Style="{StaticResource CommonTextBoxStyle}" />
-        <TextBox x:Name="passwordTB" HorizontalAlignment="Left" Margin="206,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="29" Style="{StaticResource CommonTextBoxStyle}" />
-        <TextBox x:Name="displayNameTB" HorizontalAlignment="Left" Margin="206,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="29" Style="{StaticResource CommonTextBoxStyle}" />
-        <TextBox x:Name="locationTB" HorizontalAlignment="Left" Margin="206,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="29" Style="{StaticResource CommonTextBoxStyle}" />
-        <Label Content="Username" HorizontalAlignment="Left" Margin="137,144,0,0" VerticalAlignment="Top" Height="30" Foreground="#1A3845"/>
-        <Label Content="Email" HorizontalAlignment="Left" Margin="163,180,0,0" VerticalAlignment="Top" Height="30" Foreground="#1A3845"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="141,216,0,0" VerticalAlignment="Top" Height="30" Foreground="#1A3845"/>
-        <Label Content="Display Name" HorizontalAlignment="Left" Margin="118,252,0,0" VerticalAlignment="Top" Height="30" Foreground="#1A3845"/>
-        <Label Content="Location" HorizontalAlignment="Left" Margin="147,287,0,0" VerticalAlignment="Top" Height="30" Foreground="#1A3845"/>
-        <Ellipse HorizontalAlignment="Left" Height="79" Margin="407,50,0,0" VerticalAlignment="Top" Width="79">
-            <Ellipse.Fill>
-                <SolidColorBrush Color="#FFD861"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse HorizontalAlignment="Left" Height="110" Margin="424,367,0,0" VerticalAlignment="Top" Width="110" Fill="#FF6C78"/>
-        <Ellipse HorizontalAlignment="Left" Height="50" Margin="681,372,0,0" VerticalAlignment="Top" Width="50" Fill="#01D1DC"/>
-        <Image Margin="0,-1,726,1" Source="/img/Kotak kiri.png" Stretch="Fill"/>
+        <TextBox x:Name="usernameTB" HorizontalAlignment="Left" Margin="523,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Margin="0,0,0,5">
+                                    <Border.Effect>
+                                        <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="3" Opacity="0.7" Direction="270"/>
+                                    </Border.Effect>
+                                    <ScrollViewer x:Name="PART_ContentHost" Margin="0,-1,0,0" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBox x:Name="emailTB" HorizontalAlignment="Left" Margin="523,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Margin="0,0,0,5">
+                                    <Border.Effect>
+                                        <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="3" Opacity="0.7" Direction="270"/>
+                                    </Border.Effect>
+                                    <ScrollViewer x:Name="PART_ContentHost" Margin="0,-1,0,0" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBox x:Name="passwordTB" HorizontalAlignment="Left" Margin="523,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Margin="0,0,0,5">
+                                    <Border.Effect>
+                                        <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="3" Opacity="0.7" Direction="270"/>
+                                    </Border.Effect>
+                                    <ScrollViewer x:Name="PART_ContentHost" Margin="0,-1,0,0" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBox x:Name="displayNameTB" HorizontalAlignment="Left" Margin="523,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Margin="0,0,0,5">
+                                    <Border.Effect>
+                                        <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="3" Opacity="0.7" Direction="270"/>
+                                    </Border.Effect>
+                                    <ScrollViewer x:Name="PART_ContentHost" Margin="0,-1,0,0" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBox x:Name="locationTB" HorizontalAlignment="Left" Margin="523,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Margin="0,0,0,5">
+                                    <Border.Effect>
+                                        <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="3" Opacity="0.7" Direction="270"/>
+                                    </Border.Effect>
+                                    <ScrollViewer x:Name="PART_ContentHost" Margin="0,-1,0,0" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="432,102,0,0" VerticalAlignment="Top" Height="30" Foreground="#FFFFFF" FontWeight="SemiBold"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="432,142,0,0" VerticalAlignment="Top" Height="30" Foreground="#FFFFFF" FontWeight="SemiBold"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="432,181,0,0" VerticalAlignment="Top" Height="30" Foreground="#FFFFFF" FontWeight="SemiBold"/>
+        <Label Content="Display Name" HorizontalAlignment="Left" Margin="432,222,0,0" VerticalAlignment="Top" Height="30" Foreground="#FFFFFF" FontWeight="SemiBold"/>
+        <Label Content="Location" HorizontalAlignment="Left" Margin="432,262,0,0" VerticalAlignment="Top" Height="30" Foreground="#FFFFFF" FontWeight="SemiBold"/>
+        <Image Source="img/FotoAnak.png" HorizontalAlignment="Left" VerticalAlignment="Center" Height="220" Width="219" Margin="79,0,0,0"/>
     </Grid>
 </Window>
