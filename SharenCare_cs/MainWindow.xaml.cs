@@ -21,13 +21,15 @@ namespace SharenCare_cs
     /// </summary>
     public partial class MainWindow : Window
     {
-
-        private NpgsqlConnection? connection;
+        public NpgsqlConnection? connection;
         public MainWindow()
         {
             InitializeComponent();
             InitializeDatabaseConnection();
+            // Set halaman pertama saat MainWindow dimuat
+            this.Content = new HomePage(this);
         }
+
         private void InitializeDatabaseConnection()
         {
             // Replace with your actual connection string
@@ -43,27 +45,6 @@ namespace SharenCare_cs
             {
                 MessageBox.Show("Error connecting to the database: " + ex.Message);
             }
-        }
-
-        private void Register_Click(object sender, RoutedEventArgs e)
-        {
-            // Membuka jendela baru "Window2"
-            Window2 window2 = new Window2(connection);
-            window2.Show();
-            this.Close(); // Menutup jendela saat berpindah ke Window2
-        }
-
-        private void Login_Click(object sender, RoutedEventArgs e)
-        {
-            // Membuka jendela baru "Window2"
-            Window1 window1 = new Window1(connection);
-            window1.Show();
-            this.Close(); // Menutup jendela saat berpindah ke Window2
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
