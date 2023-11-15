@@ -66,11 +66,11 @@
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="TextBox">
-                                <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Margin="0,0,0,5">
+                                <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Padding="5" Margin="0,0,0,5">
                                     <Border.Effect>
                                         <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="3" Opacity="0.7" Direction="270"/>
                                     </Border.Effect>
-                                    <ScrollViewer x:Name="PART_ContentHost" Margin="0,-1,0,0" />
+                                    <ScrollViewer x:Name="PART_ContentHost" />
                                 </Border>
                             </ControlTemplate>
                         </Setter.Value>
@@ -84,11 +84,11 @@
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="TextBox">
-                                <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Margin="0,0,0,5">
+                                <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Padding="5" Margin="0,0,0,5">
                                     <Border.Effect>
                                         <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="3" Opacity="0.7" Direction="270"/>
                                     </Border.Effect>
-                                    <ScrollViewer x:Name="PART_ContentHost" Margin="0,-1,0,0" />
+                                    <ScrollViewer x:Name="PART_ContentHost" />
                                 </Border>
                             </ControlTemplate>
                         </Setter.Value>
@@ -102,11 +102,11 @@
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="TextBox">
-                                <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Margin="0,0,0,5">
+                                <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Padding="5" Margin="0,0,0,5">
                                     <Border.Effect>
                                         <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="3" Opacity="0.7" Direction="270"/>
                                     </Border.Effect>
-                                    <ScrollViewer x:Name="PART_ContentHost" Margin="0,-1,0,0" />
+                                    <ScrollViewer x:Name="PART_ContentHost" />
                                 </Border>
                             </ControlTemplate>
                         </Setter.Value>
@@ -120,11 +120,11 @@
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="TextBox">
-                                <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Margin="0,0,0,5">
+                                <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Padding="5" Margin="0,0,0,5">
                                     <Border.Effect>
                                         <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="3" Opacity="0.7" Direction="270"/>
                                     </Border.Effect>
-                                    <ScrollViewer x:Name="PART_ContentHost" Margin="0,-1,0,0" />
+                                    <ScrollViewer x:Name="PART_ContentHost" />
                                 </Border>
                             </ControlTemplate>
                         </Setter.Value>
@@ -138,11 +138,11 @@
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="TextBox">
-                                <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Margin="0,0,0,5">
+                                <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Padding="5" Margin="0,0,0,5">
                                     <Border.Effect>
                                         <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="3" Opacity="0.7" Direction="270"/>
                                     </Border.Effect>
-                                    <ScrollViewer x:Name="PART_ContentHost" Margin="0,-1,0,0" />
+                                    <ScrollViewer x:Name="PART_ContentHost" />
                                 </Border>
                             </ControlTemplate>
                         </Setter.Value>
