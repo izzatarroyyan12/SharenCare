@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\pafams\SharenCare\SharenCare_cs\App.xaml
-41954437739
+5471388425
 
-151956823317
+16817997161
 2001878543838
-AdminDashboard.xaml;MainWindow.xaml;Window1.xaml;Window2.xaml;
+AdminDashboard.xaml;HomePage.xaml;LoginPage.xaml;MainWindow.xaml;RegisterPage.xaml;
 
-True
+False
 

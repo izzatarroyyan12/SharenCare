@@ -17,12 +17,10 @@ C:\Users\pafams\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.
 C:\Users\pafams\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.dll
 C:\Users\pafams\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.pdb
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\MainWindow.g.cs
-C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window2.g.cs
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\App.g.cs
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs_MarkupCompile.cache
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs_MarkupCompile.lref
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\MainWindow.baml
-C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window2.baml
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.g.resources
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.AssemblyInfoInputs.cache
@@ -91,5 +89,9 @@ C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.csproj.CopyComplete
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashboard.g.cs
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashboard.baml
-C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window1.g.cs
-C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window1.baml
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\HomePage.g.cs
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\LoginPage.g.cs
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\RegisterPage.g.cs
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\HomePage.baml
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\LoginPage.baml
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\RegisterPage.baml
