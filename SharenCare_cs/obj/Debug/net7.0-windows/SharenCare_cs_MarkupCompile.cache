@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\
-SharenCare_cs
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\
+SharenCare_cs_nd00edw1_wpftmp
 none
 false
-TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\pafams\SharenCare\SharenCare_cs\App.xaml
+TRACE;RELEASE;NET;NET7_0;NETCOREAPP
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\App.xaml
 5585589576
 
-14-1675179406
-2001878543838
+20-64600480
+4001733161222
 AdminDashPage.xaml;HomePage.xaml;LoginPage.xaml;MainWindow.xaml;RegisterPage.xaml;
 
-False
+True
 
