@@ -35,7 +35,7 @@
             </Label.Effect>
         </Label>
         <Label Content="Users Data" Margin="349,105,349,284" FontSize="18" Foreground="#E2E2E2" FontWeight="Bold"/>
-        <Button x:Name="btnShowData" Content="Show Data" HorizontalAlignment="Left" Margin="514,357,0,0" VerticalAlignment="Top" Width="97" Height="33" FontWeight="SemiBold" FontSize="15" Foreground="#E2E2E2" Background="#7A7469">
+        <Button x:Name="btnShowData" Content="Show Data" HorizontalAlignment="Left" Margin="514,357,0,0" VerticalAlignment="Top" Width="97" Height="33" FontWeight="SemiBold" FontSize="15" Foreground="#E2E2E2" Background="#7A7469" Click="btnShowData_Click">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
