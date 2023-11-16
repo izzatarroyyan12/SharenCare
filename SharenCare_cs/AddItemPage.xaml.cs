@@ -20,9 +20,18 @@ namespace SharenCare_cs
     /// </summary>
     public partial class AddItemPage : Page
     {
-        public AddItemPage()
+        private readonly MainWindow mainWindow;
+
+        public AddItemPage(MainWindow mainWindow)
         {
             InitializeComponent();
+            this.mainWindow = mainWindow;
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.mainWindow.Content = new ListItemPage(this.mainWindow);
         }
     }
 }

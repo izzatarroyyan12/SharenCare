@@ -20,9 +20,18 @@ namespace SharenCare_cs
     /// </summary>
     public partial class CustomerDashPage : Page
     {
-        public CustomerDashPage()
+        private readonly MainWindow mainWindow;
+
+   
+        public CustomerDashPage(MainWindow mainWindow)
         {
             InitializeComponent();
+            this.mainWindow = mainWindow;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.mainWindow.Content = new AddItemPage(this.mainWindow);
         }
     }
 }
