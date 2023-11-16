@@ -21,17 +21,19 @@ namespace SharenCare_cs
     public partial class CustomerDashPage : Page
     {
         private readonly MainWindow mainWindow;
+        private readonly string enteredUsername; // Field to store the enteredUsername
 
-   
-        public CustomerDashPage(MainWindow mainWindow)
+
+        public CustomerDashPage(MainWindow mainWindow, string enteredUsername)
         {
             InitializeComponent();
             this.mainWindow = mainWindow;
+            this.enteredUsername = enteredUsername;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.mainWindow.Content = new AddItemPage(this.mainWindow);
+            this.mainWindow.Content = new AddItemPage(this.mainWindow, enteredUsername);
         }
     }
 }
