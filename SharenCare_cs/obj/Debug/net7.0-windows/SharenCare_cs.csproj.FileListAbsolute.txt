@@ -87,11 +87,11 @@ C:\Users\pafams\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\Microsoft.Exte
 C:\Users\pafams\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\Npgsql.dll
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.csproj.AssemblyReference.cache
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.csproj.CopyComplete
-C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashboard.g.cs
-C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashboard.baml
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\HomePage.g.cs
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\LoginPage.g.cs
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\RegisterPage.g.cs
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\HomePage.baml
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\LoginPage.baml
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\RegisterPage.baml
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashPage.g.cs
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashPage.baml

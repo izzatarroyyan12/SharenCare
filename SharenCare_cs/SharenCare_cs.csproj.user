@@ -7,7 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="AdminDashboard.xaml.cs">
+    <Compile Update="AdminDashPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="HomePage.xaml.cs">
@@ -21,7 +21,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="AdminDashboard.xaml">
+    <Page Update="AdminDashPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="HomePage.xaml">
