@@ -61,14 +61,10 @@ D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windo
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.dll
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.pdb
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\MainWindow.g.cs
-D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window1.g.cs
-D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window2.g.cs
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\App.g.cs
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs_MarkupCompile.cache
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs_MarkupCompile.lref
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\MainWindow.baml
-D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window1.baml
-D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window2.baml
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.g.resources
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.GeneratedMSBuildEditorConfig.editorconfig
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.AssemblyInfoInputs.cache
@@ -95,3 +91,11 @@ C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\RegisterPage.g
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\HomePage.baml
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\LoginPage.baml
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\RegisterPage.baml
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashboard.g.cs
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\HomePage.g.cs
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\LoginPage.g.cs
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\RegisterPage.g.cs
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashboard.baml
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\HomePage.baml
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\LoginPage.baml
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\RegisterPage.baml
