@@ -24,7 +24,7 @@ namespace SharenCare_cs
     {
         private NpgsqlConnection conn;
         private string connectionString = "Host=localhost;Port=5432;Database=SharenCare;Username=postgres;Password=postgres";
-        public AdminDashPage()
+        public AdminDashPage(MainWindow mainWindow)
         {
             InitializeComponent();
             InitializeDatabase();
