@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Kuliah\\Junior Project\\Project\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj": {}
+    "C:\\Users\\pafams\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj": {}
   },
   "projects": {
-    "D:\\Kuliah\\Junior Project\\Project\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj": {
+    "C:\\Users\\pafams\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Kuliah\\Junior Project\\Project\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj",
+        "projectUniqueName": "C:\\Users\\pafams\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj",
         "projectName": "SharenCare_cs",
-        "projectPath": "D:\\Kuliah\\Junior Project\\Project\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj",
-        "packagesPath": "C:\\Users\\MSI GAMING\\.nuget\\packages\\",
-        "outputPath": "D:\\Kuliah\\Junior Project\\Project\\SharenCare\\SharenCare_cs\\obj\\",
+        "projectPath": "C:\\Users\\pafams\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj",
+        "packagesPath": "C:\\Users\\pafams\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pafams\\SharenCare\\SharenCare_cs\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MSI GAMING\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pafams\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

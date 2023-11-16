@@ -15,10 +15,15 @@
     <None Remove="img\Icon Password.png" />
     <None Remove="img\IconEmail.png" />
     <None Remove="img\IconPassword.png" />
+    <None Remove="img\JumlahAnakYatim.png" />
+    <None Remove="img\JumlahPanti.png" />
+    <None Remove="img\Kebaikan.png" />
+    <None Remove="img\Kontribusi.png" />
     <None Remove="img\Kotak kiri.png" />
     <None Remove="img\Rounded Bawah.png" />
     <None Remove="img\SDGS 1.png" />
     <None Remove="img\SDGS 2.png" />
+    <None Remove="img\Solidaritas.png" />
     <None Remove="kucing.jpg" />
   </ItemGroup>
 
@@ -32,11 +37,16 @@
     <Resource Include="img\Gambar bulat.png" />
     <Resource Include="img\IconEmail.png" />
     <Resource Include="img\IconPassword.png" />
+    <Resource Include="img\JumlahAnakYatim.png" />
+    <Resource Include="img\JumlahPanti.png" />
+    <Resource Include="img\Kebaikan.png" />
+    <Resource Include="img\Kontribusi.png" />
     <Resource Include="img\Kotak kiri.png" />
     <Resource Include="img\kucing.jpg" />
     <Resource Include="img\Rounded Bawah.png" />
     <Resource Include="img\SDGS 1.png" />
     <Resource Include="img\SDGS 2.png" />
+    <Resource Include="img\Solidaritas.png" />
   </ItemGroup>
 
 </Project>
