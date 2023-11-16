@@ -61,7 +61,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" Margin="86,160,86,120">
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" Margin="86,158,86,122">
             <DataGrid.RowStyle>
                 <Style TargetType="DataGridRow">
                     <Setter Property="Background" Value="LightBlue"/>
