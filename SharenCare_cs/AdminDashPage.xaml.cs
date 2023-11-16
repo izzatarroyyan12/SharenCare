@@ -23,7 +23,7 @@ namespace SharenCare_cs
     public partial class AdminDashPage : Page
     {
         private NpgsqlConnection conn;
-        private string connectionString = "Host=localhost;Port=5432;Database=SharenCare;Username=postgres;Password=postgres";
+        private string connectionString = "Host=flora.db.elephantsql.com;Port=5432;Database=xyasvyry;Username=xyasvyry;Password=J_P0fQMJWx97Mv4tN9l3MGhfkXDgd8ou";
 
         public AdminDashPage(MainWindow mainWindow)
         {
