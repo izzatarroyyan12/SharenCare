@@ -61,14 +61,20 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <DataGrid x:Name="dataGrid" d:ItemsSource="{x:Null}" Margin="86,160,86,120">
-            <DataGrid.Template>
-                <ControlTemplate TargetType="DataGrid">
-                    <Border Background="White" CornerRadius="20">
-                        <ContentPresenter/>
-                    </Border>
-                </ControlTemplate>
-            </DataGrid.Template>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" Margin="86,160,86,120">
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="LightBlue"/>
+                    <!-- Add other row-level styles as needed -->
+                </Style>
+            </DataGrid.RowStyle>
+
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="Foreground" Value="DarkGreen"/>
+                    <!-- Add other cell-level styles as needed -->
+                </Style>
+            </DataGrid.CellStyle>
         </DataGrid>
 
     </Grid>
