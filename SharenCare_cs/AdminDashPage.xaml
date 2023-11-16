@@ -10,7 +10,7 @@
 
     <Grid>
         <Image Source="img/Background.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="498" Width="800"/>
-        <Rectangle HorizontalAlignment="Center" Height="368" VerticalAlignment="Center" Width="745" StrokeThickness="0">
+        <Rectangle HorizontalAlignment="Center" Height="389" VerticalAlignment="Center" Width="744" StrokeThickness="0">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FFEAC2" Opacity="0.3"/>
             </Rectangle.Fill>
@@ -30,13 +30,13 @@
                 <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="5" Opacity="0.7"/>
             </Rectangle.Effect>
         </Rectangle>
-        <Image Source="img/Rounded Bawah.png" Margin="325,-87,325,99"/>
+        <Image Source="img/Rounded Bawah.png" Margin="325,-79,325,91"/>
         <Label Content="Admin Dashboard" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" FontSize="40" Foreground="#E2E2E2" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="4" Opacity="0.5"/>
             </Label.Effect>
         </Label>
-        <Label Content="Users Data" Margin="349,113,349,276" FontSize="18" Foreground="#E2E2E2" FontWeight="Bold"/>
+        <Label Content="Users Data" Margin="344,102,304,268" FontSize="18" Foreground="#E2E2E2" FontWeight="Bold"/>
         <Button x:Name="btnShowData" Content="Show Data" HorizontalAlignment="Left" Margin="514,357,0,0" VerticalAlignment="Top" Width="97" Height="33" FontWeight="SemiBold" FontSize="15" Foreground="#E2E2E2" Background="#7A7469" Click="btnShowData_Click">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -61,7 +61,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" Margin="86,158,86,122">
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" Margin="149,156,149,124">
             <DataGrid.RowStyle>
                 <Style TargetType="DataGridRow">
                     <Setter Property="Background" Value="LightBlue"/>
