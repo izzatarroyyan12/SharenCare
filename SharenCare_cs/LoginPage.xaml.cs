@@ -91,7 +91,7 @@ namespace SharenCare_cs
                 }
                 else
                 {
-                    this.mainWindow.Content = new CustomerDashPage(this.mainWindow);
+                    this.mainWindow.Content = new CustomerDashPage(this.mainWindow, enteredUsername);
                 }
             }
             else
