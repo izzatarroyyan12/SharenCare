@@ -10,7 +10,7 @@
 
     <Grid>
         <Image Source="img/Background.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="498" Width="800"/>
-        <Rectangle HorizontalAlignment="Center" Height="414" VerticalAlignment="Center" Width="744" StrokeThickness="0">
+        <Rectangle HorizontalAlignment="Center" Height="374" VerticalAlignment="Center" Width="744" StrokeThickness="0">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FFEAC2" Opacity="0.3"/>
             </Rectangle.Fill>
@@ -20,27 +20,27 @@
                 <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="5" Opacity="0.7"/>
             </Rectangle.Effect>
         </Rectangle>
-        <Image Source="img/JumlahAnakYatim.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="169" Width="178" Margin="364,102,0,0"/>
-        <Image Source="img/JumlahPanti.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="171" Width="274" Margin="50,134,0,0"/>
-        <Image Source="img/Kebaikan.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="123" Width="140" Margin="57,287,0,0"/>
-        <Image Source="img/Kontribusi.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="123" Width="140" Margin="403,287,0,0"/>
-        <Image Source="img/Solidaritas.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="123" Width="140" Margin="228,287,0,0"/>
-        <Label Content="Welcome to SharenCare" HorizontalAlignment="Left" Margin="47,26,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#E2E2E2" FontWeight="Bold">
+        <Image Source="img/JumlahAnakYatim.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="157" Width="166" Margin="342,90,0,0"/>
+        <Image Source="img/JumlahPanti.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="158" Width="255" Margin="50,120,0,0"/>
+        <Image Source="img/Kebaikan.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="105" Width="126" Margin="57,264,0,0"/>
+        <Image Source="img/Kontribusi.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="105" Width="126" Margin="371,264,0,0"/>
+        <Image Source="img/Solidaritas.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="105" Width="127" Margin="212,264,0,0"/>
+        <Label Content="Welcome to SharenCare" HorizontalAlignment="Left" Margin="47,30,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#E2E2E2" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="1.5" Opacity="0.5"/>
             </Label.Effect>
         </Label>
-        <Label Content="Karena esensi dari hidup adalah berbagi." HorizontalAlignment="Left" Margin="48,58,0,0" VerticalAlignment="Top" FontSize="15" Foreground="#E2E2E2" FontWeight="Light">
+        <Label Content="Karena esensi dari hidup adalah berbagi." HorizontalAlignment="Left" Margin="48,62,0,0" VerticalAlignment="Top" FontSize="15" Foreground="#E2E2E2" FontWeight="Light">
             <Label.Effect>
                 <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="1.5" Opacity="0.5"/>
             </Label.Effect>
         </Label>
-        <Label Content="Apakah kamu tau?" HorizontalAlignment="Left" Margin="48,107,0,0" VerticalAlignment="Top" FontSize="15" Foreground="#E2E2E2" FontWeight="Light">
+        <Label Content="Apakah kamu tau?" HorizontalAlignment="Left" Margin="48,95,0,0" VerticalAlignment="Top" FontSize="15" Foreground="#E2E2E2" FontWeight="Light">
             <Label.Effect>
                 <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="1.5" Opacity="0.5"/>
             </Label.Effect>
         </Label>
-        <Button Content="Add Item" HorizontalAlignment="Left" Margin="613,241,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="30" Width="104" FontWeight="Bold" FontSize="16">
+        <Button Content="Add Item" HorizontalAlignment="Left" Margin="581,222,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="30" Width="104" FontWeight="Bold" FontSize="16" Click="Button_Click">
             <Button.Effect>
                 <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="1" Opacity="0.5" Direction="280"/>
             </Button.Effect>
@@ -60,7 +60,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Label Content="Ingin berbagi sekarang?" HorizontalAlignment="Left" Margin="585,206,0,0" VerticalAlignment="Top" FontSize="15" Foreground="#E2E2E2" FontWeight="Light">
+        <Label Content="Ingin berbagi sekarang?" HorizontalAlignment="Left" Margin="553,176,0,0" VerticalAlignment="Top" FontSize="15" Foreground="#E2E2E2" FontWeight="Light">
             <Label.Effect>
                 <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="1.5" Opacity="0.5"/>
             </Label.Effect>

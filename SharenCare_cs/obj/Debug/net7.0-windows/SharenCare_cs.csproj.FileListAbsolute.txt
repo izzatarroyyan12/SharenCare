@@ -37,14 +37,10 @@ C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\bin\Debug\net7.0
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.dll
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.pdb
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\MainWindow.g.cs
-C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window1.g.cs
-C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window2.g.cs
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\App.g.cs
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs_MarkupCompile.cache
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs_MarkupCompile.lref
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\MainWindow.baml
-C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window1.baml
-C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\Window2.baml
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.g.resources
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.AssemblyInfoInputs.cache
@@ -99,3 +95,21 @@ C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashPage.
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashPage.baml
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashPage.g.cs
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashPage.baml
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.csproj.AssemblyReference.cache
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AddItemPage.g.cs
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashPage.g.cs
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\CustomerDashPage.g.cs
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\HomePage.g.cs
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\ListItemPage.g.cs
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\LoginPage.g.cs
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\RegisterPage.g.cs
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\Npgsql.dll
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AddItemPage.baml
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashPage.baml
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\CustomerDashPage.baml
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\HomePage.baml
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\ListItemPage.baml
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\LoginPage.baml
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\RegisterPage.baml
+C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.csproj.CopyComplete

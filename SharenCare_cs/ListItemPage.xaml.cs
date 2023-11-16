@@ -20,9 +20,12 @@ namespace SharenCare_cs
     /// </summary>
     public partial class ListItemPage : Page
     {
-        public ListItemPage()
+        private readonly MainWindow mainWindow;
+
+        public ListItemPage(MainWindow mainWindow)
         {
             InitializeComponent();
+            this.mainWindow = mainWindow;
         }
     }
 }

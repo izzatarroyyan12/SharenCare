@@ -91,8 +91,7 @@ namespace SharenCare_cs
                 }
                 else
                 {
-                    // Assume other users are customers, redirect to CustomerDashPage
-                    MessageBox.Show("Login berhasil, anda adalah customer", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
+                    this.mainWindow.Content = new CustomerDashPage(this.mainWindow);
                 }
             }
             else

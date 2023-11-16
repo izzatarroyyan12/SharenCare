@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6tgjAiuAWeDRXFcPbVoJ0vStUl4xJxIxvwZCdtRrfEy9dAOtp8JRQu55YDEpiaR7blMrjCKynbQZ2gCOenMveA==",
+  "dgSpecHash": "I+ayW7nBJey4QEBvz2peL3zfgS8hzRTzakUQnQGpUZziu8FwSTF5dXQ6gpuERf4dFmE63VhQrYfJ/OoPe11EhQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pafams\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj",
+  "projectFilePath": "C:\\Users\\muham\\Documents\\JuniorProject\\SharenCare\\SharenCare_cs\\SharenCare_cs.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pafams\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\pafams\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512"
+    "C:\\Users\\muham\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\muham\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512"
   ],
   "logs": []
 }
