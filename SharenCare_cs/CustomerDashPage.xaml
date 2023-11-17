@@ -85,6 +85,26 @@
                 </Style>
             </Button.Style>
         </Button>
+        <Button x:Name="ViewItem" Content="View Item" HorizontalAlignment="Left" Margin="581,266,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="30" Width="104" FontWeight="Bold" FontSize="16" Click="ViewItem_Click">
+            <Button.Effect>
+                <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="1" Opacity="0.5" Direction="280"/>
+            </Button.Effect>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="#7A7469" />
+                    <Setter Property="Foreground" Value="White" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="15">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
 
     </Grid>
 </Page>
