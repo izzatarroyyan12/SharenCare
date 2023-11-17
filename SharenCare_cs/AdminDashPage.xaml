@@ -9,8 +9,8 @@
       Title="AdminDashPage">
 
     <Grid>
-        <Image Source="img/Background.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="498" Width="800"/>
-        <Rectangle HorizontalAlignment="Center" Height="389" VerticalAlignment="Center" Width="744" StrokeThickness="0">
+        <Image Source="img/Background.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="468" Width="800"/>
+        <Rectangle HorizontalAlignment="Center" Height="374" VerticalAlignment="Center" Width="744" StrokeThickness="0">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FFEAC2" Opacity="0.3"/>
             </Rectangle.Fill>
@@ -20,7 +20,7 @@
                 <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="5" Opacity="0.7"/>
             </Rectangle.Effect>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Center" Height="240" VerticalAlignment="Top" Width="664" StrokeThickness="0" Margin="0,105,0,0">
+        <Rectangle HorizontalAlignment="Center" Height="262" VerticalAlignment="Top" Width="694" StrokeThickness="0" Margin="0,120,0,0">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#D2C1A2" Opacity="0.5"/>
             </Rectangle.Fill>
@@ -30,52 +30,71 @@
                 <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="5" Opacity="0.7"/>
             </Rectangle.Effect>
         </Rectangle>
-        <Image Source="img/Rounded Bawah.png" Margin="325,-79,325,91"/>
-        <Label Content="Admin Dashboard" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" FontSize="40" Foreground="#E2E2E2" FontWeight="Bold">
-            <Label.Effect>
-                <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="4" Opacity="0.5"/>
-            </Label.Effect>
-        </Label>
-        <Label Content="Users Data" Margin="344,102,304,268" FontSize="18" Foreground="#E2E2E2" FontWeight="Bold"/>
-        <Button x:Name="btnShowData" Content="Show Data" HorizontalAlignment="Left" Margin="514,357,0,0" VerticalAlignment="Top" Width="97" Height="33" FontWeight="SemiBold" FontSize="15" Foreground="#E2E2E2" Background="#7A7469" Click="btnShowData_Click">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
-                        <Border.Effect>
-                            <DropShadowEffect Color="Black" BlurRadius="0" ShadowDepth="2" Opacity="0.5"/>
-                        </Border.Effect>
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="635,357,0,0" VerticalAlignment="Top" Width="97" Height="33" FontWeight="SemiBold" FontSize="15" Foreground="#E2E2E2" Background="#7A7469">
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
-                        <Border.Effect>
-                            <DropShadowEffect Color="Black" BlurRadius="0" ShadowDepth="2" Opacity="0.5"/>
-                        </Border.Effect>
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" Margin="149,156,149,124">
+        <Image Source="img/Rounded Bawah.png" HorizontalAlignment="Center" VerticalAlignment="Top" Height="37" Width="148" Margin="0,120,0,0"/>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" Margin="149,168,149,125" Background="#FFEAC2">
             <DataGrid.RowStyle>
                 <Style TargetType="DataGridRow">
-                    <Setter Property="Background" Value="LightBlue"/>
+                    <Setter Property="Background" Value="#FFEAC2"/>
                     <!-- Add other row-level styles as needed -->
                 </Style>
             </DataGrid.RowStyle>
 
             <DataGrid.CellStyle>
                 <Style TargetType="DataGridCell">
-                    <Setter Property="Foreground" Value="DarkGreen"/>
+                    <Setter Property="Foreground" Value="Black"/>
                     <!-- Add other cell-level styles as needed -->
                 </Style>
             </DataGrid.CellStyle>
         </DataGrid>
-
+        <Label Content="Admin Dashboard" HorizontalAlignment="Center" Margin="0,45,0,0" VerticalAlignment="Top" Foreground="#E2E2E2" FontWeight="Bold" FontSize="40">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="2" ShadowDepth="2" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Users Data" HorizontalAlignment="Center" Margin="0,118,0,0" VerticalAlignment="Top" Foreground="#E2E2E2" FontWeight="Bold" FontSize="20">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="2" ShadowDepth="1.5" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
+        <Button x:Name="btnShowData" Content="Show Data" HorizontalAlignment="Left" Margin="532,337,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="30" Width="119" FontWeight="Bold" FontSize="16" Click="btnShowData_Click">
+            <Button.Effect>
+                <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="1" Opacity="0.5" Direction="280"/>
+            </Button.Effect>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="#7A7469" />
+                    <Setter Property="Foreground" Value="White" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="15">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button Content="Log Out" HorizontalAlignment="Left" Margin="675,48,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="25" Width="74" FontWeight="Bold" FontSize="12" Click="ButtonLogOut_Click">
+            <Button.Effect>
+                <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="1" Opacity="0.5" Direction="280"/>
+            </Button.Effect>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="Red" />
+                    <Setter Property="Foreground" Value="White" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="15">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
     </Grid>
 </Page>

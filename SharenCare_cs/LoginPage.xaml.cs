@@ -9,7 +9,7 @@ namespace SharenCare_cs
     public partial class LoginPage : Page
     {
         private readonly Authentication authentication;
-        private readonly MainWindow mainWindow;
+        private MainWindow mainWindow;
 
         public LoginPage(MainWindow mainWindow)
         {
