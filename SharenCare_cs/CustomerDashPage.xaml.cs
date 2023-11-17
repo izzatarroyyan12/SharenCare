@@ -40,5 +40,10 @@ namespace SharenCare_cs
         {
             this.mainWindow.Content = new LoginPage(this.mainWindow);
         }
+
+        private void ViewItem_Click(object sender, RoutedEventArgs e)
+        {
+            this.mainWindow.Content = new ListItemPage(this.mainWindow);
+        }
     }
 }
