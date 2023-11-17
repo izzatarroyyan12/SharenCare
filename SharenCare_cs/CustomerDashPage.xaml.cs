@@ -35,5 +35,10 @@ namespace SharenCare_cs
         {
             this.mainWindow.Content = new AddItemPage(this.mainWindow, enteredUsername);
         }
+
+        private void ButtonLogOut_Click(object sender, RoutedEventArgs e)
+        {
+            this.mainWindow.Content = new LoginPage(this.mainWindow);
+        }
     }
 }

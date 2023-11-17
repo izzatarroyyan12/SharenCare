@@ -99,7 +99,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Label Content="Email" HorizontalAlignment="Left" Margin="99,156,0,0" VerticalAlignment="Top" Foreground="#E2E2E2" FontWeight="SemiBold" FontSize="13"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="99,156,0,0" VerticalAlignment="Top" Foreground="#E2E2E2" FontWeight="SemiBold" FontSize="13"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="99,198,0,0" VerticalAlignment="Top" Foreground="#E2E2E2" FontWeight="SemiBold" FontSize="13"/>
     </Grid>
 </Page>

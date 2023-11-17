@@ -36,7 +36,7 @@
                 <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
             </Label.Effect>
         </Label>
-        <TextBox x:Name="nameTB" HorizontalAlignment="Left" Margin="340,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="30" Opacity="0.5">
+        <TextBox x:Name="nameTB" HorizontalAlignment="Left" Margin="340,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="35" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -54,7 +54,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="categoryTB" HorizontalAlignment="Left" Margin="340,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="30" Opacity="0.5">
+        <TextBox x:Name="categoryTB" HorizontalAlignment="Left" Margin="340,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="35" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -72,7 +72,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="expireTB" HorizontalAlignment="Left" Margin="340,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="30" Opacity="0.5">
+        <TextBox x:Name="expireTB" HorizontalAlignment="Left" Margin="340,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="35" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -90,7 +90,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="kuantitasTB" HorizontalAlignment="Left" Margin="340,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="30" Opacity="0.5">
+        <TextBox x:Name="kuantitasTB" HorizontalAlignment="Left" Margin="340,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="35" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -108,7 +108,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="noteTB" HorizontalAlignment="Left" Margin="340,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="30" Opacity="0.5">
+        <TextBox x:Name="noteTB" HorizontalAlignment="Left" Margin="340,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="35" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">

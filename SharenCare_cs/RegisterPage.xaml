@@ -60,7 +60,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <TextBox x:Name="usernameTB" HorizontalAlignment="Left" Margin="523,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
+        <TextBox x:Name="usernameTB" HorizontalAlignment="Left" Margin="523,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="35" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -78,7 +78,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="emailTB" HorizontalAlignment="Left" Margin="523,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
+        <TextBox x:Name="emailTB" HorizontalAlignment="Left" Margin="523,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="35" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -96,7 +96,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="passwordTB" HorizontalAlignment="Left" Margin="523,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
+        <TextBox x:Name="passwordTB" HorizontalAlignment="Left" Margin="523,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="35" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -114,7 +114,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="displayNameTB" HorizontalAlignment="Left" Margin="523,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
+        <TextBox x:Name="displayNameTB" HorizontalAlignment="Left" Margin="523,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="35" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -132,7 +132,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="locationTB" HorizontalAlignment="Left" Margin="523,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
+        <TextBox x:Name="locationTB" HorizontalAlignment="Left" Margin="523,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="35" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">

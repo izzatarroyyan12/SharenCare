@@ -22,6 +22,7 @@ namespace SharenCare_cs
     /// </summary>
     public partial class AdminDashPage : Page
     {
+        private MainWindow mainWindow;
         private NpgsqlConnection conn;
         private string connectionString = "Host=flora.db.elephantsql.com;Port=5432;Database=xyasvyry;Username=xyasvyry;Password=J_P0fQMJWx97Mv4tN9l3MGhfkXDgd8ou";
 
@@ -29,6 +30,7 @@ namespace SharenCare_cs
         {
             InitializeComponent();
             InitializeDatabase();
+            this.mainWindow = mainWindow;
         }
 
         private void InitializeDatabase()
@@ -77,6 +79,11 @@ namespace SharenCare_cs
         {
             System.Diagnostics.Debug.WriteLine("Button Clicked");
             LoadUserData();
+        }
+
+        private void ButtonLogOut_Click(object sender, RoutedEventArgs e)
+        {
+            this.mainWindow.Content = new LoginPage(this.mainWindow);
         }
     }
 }

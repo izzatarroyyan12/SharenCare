@@ -119,3 +119,15 @@ C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\bin\Debug\net7.0
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\muham\Documents\JuniorProject\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\pafams\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Users\pafams\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\pafams\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\pafams\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\pafams\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\pafams\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AddItemPage.g.cs
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\CustomerDashPage.g.cs
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\ListItemPage.g.cs
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AddItemPage.baml
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\CustomerDashPage.baml
+C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\ListItemPage.baml

@@ -25,7 +25,7 @@ namespace SharenCare_cs
         private readonly MainWindow mainWindow;
         private NpgsqlConnection conn;
         private string connectionString = "Host=flora.db.elephantsql.com;Port=5432;Database=xyasvyry;Username=xyasvyry;Password=J_P0fQMJWx97Mv4tN9l3MGhfkXDgd8ou";
-
+        private readonly string enteredUsername;
 
         public ListItemPage(MainWindow mainWindow)
         {
@@ -75,6 +75,11 @@ namespace SharenCare_cs
                 conn.Close();
                 System.Diagnostics.Debug.WriteLine("Database Connection Closed");
             }
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            this.mainWindow.Content = new CustomerDashPage(this.mainWindow, enteredUsername);
         }
     }
 }
