@@ -15,9 +15,9 @@ Share n Care (SnC) adalah sebuah aplikasi yang berfungsi sebagai wadah berdonasi
 2. Apabila user memilih button Sign Up, maka user akan diarahkan menuju Register Page. Pada page ini, user akan diminta untuk memasukkan beberapa data diri. Apabila sudah sesuai, user kemudian menekan button "Create Account" dan akun pun berhasil dibuat. Jika user ingin melanjutkan ke proses login, user dapat menekan tulisan (button) "Login here!".
 3. Apabila user memilih button Login pada step 1 atau menekan tulisan (button) "Login here!" pada step 2, user akan diarahkan menuju Login Page. Pada page ini, user akan diminta untuk memasukkan username dan juga password.
 4. Jika user terdeteksi login sebagai admin, maka user akan diarahkan menuju AdminDashPage dimana user dapat melihat list user serta data yang sudah terdaftar di aplikasi.
-5. Jika user terdeteksi login sebagai customer, maka user akan diarahkan menuju CustomerDashPage dimana user dapat melihat beberapa informasi awal dan juga button "Add Item".
-6. Jika user ingin berbagi/berdonasi dan menekan button "Add Item", maka user akan diarahkan menuju AddItemPage dimana user akan diminta untuk memberikan data mengenai item yang akan didonasikan.
-7. Apabila data sudah diinput dengan sesuai, user kemudian menekan button "Submit" dan user diarahkan menuju ListItemPage dimana user dapat melihat list item apa saja yang sudah didonasikan secara keseluruhan.
+5. Jika user terdeteksi login sebagai customer, maka user akan diarahkan menuju CustomerDashPage dimana user dapat melihat beberapa informasi awal dan juga button "Add Item" serta "View Item".
+6. Jika user ingin berbagi/berdonasi dan menekan button "Add Item", maka user akan diarahkan menuju AddItemPage dimana user akan diminta untuk memberikan data mengenai item yang akan didonasikan. Namun, jika user hanya ingin melihat list item, maka user menekan button "View Item" dan akan diarahkan menuju halaman ListItemPage.
+7. Apabila user menekan button "Add Item" dan data sudah diinput dengan sesuai, user kemudian menekan button "Submit" dan user diarahkan menuju ListItemPage dimana user dapat melihat list item apa saja yang sudah didonasikan secara keseluruhan.
 8. Pada ListItemPage juga terdapat button "Finish", yang ketika ditekan, user akan diarahkan kembali menuju CustomerDashPage.
 
 <br>**Class Diagram**
