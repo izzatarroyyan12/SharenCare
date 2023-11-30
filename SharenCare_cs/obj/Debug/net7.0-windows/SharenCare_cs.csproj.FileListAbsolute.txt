@@ -131,3 +131,15 @@ C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\ListItemPage.g
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AddItemPage.baml
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\CustomerDashPage.baml
 C:\Users\pafams\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\ListItemPage.baml
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AddItemPage.g.cs
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\CustomerDashPage.g.cs
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\ListItemPage.g.cs
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AddItemPage.baml
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\CustomerDashPage.baml
+D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\ListItemPage.baml
