@@ -1,4 +1,5 @@
 ﻿using Npgsql;
+using NpgsqlTypes;
 using System;
 using System.Data;
 using System.Windows;
@@ -70,6 +71,48 @@ namespace SharenCare_cs
             {
                 Console.WriteLine("Error: " + ex.Message);
                 return false;
+            }
+            finally
+            {
+                CloseConnection();
+            }
+        }
+
+        public string GetUserID(string enteredUsername)
+        {
+            try
+            {
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+                }
+
+                using (NpgsqlCommand cmd = new NpgsqlCommand())
+                {
+                    cmd.Connection = connection;
+
+                    string sql = "SELECT userid FROM snc_users WHERE username = @EnteredUsername";
+                    cmd.CommandText = sql;
+
+                    cmd.Parameters.AddWithValue("@EnteredUsername", NpgsqlDbType.Varchar, enteredUsername);
+
+                    using (NpgsqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return reader["userid"].ToString();
+                        }
+                        else
+                        {
+                            return null;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return null;
             }
             finally
             {
