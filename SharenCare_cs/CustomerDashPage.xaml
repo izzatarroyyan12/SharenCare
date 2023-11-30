@@ -5,12 +5,12 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SharenCare_cs"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="832.5" d:DesignWidth="1480"
       Title="CustomerDashPage">
 
     <Grid>
-        <Image Source="img/Background.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="498" Width="800"/>
-        <Rectangle HorizontalAlignment="Center" Height="374" VerticalAlignment="Center" Width="744" StrokeThickness="0">
+        <Image Source="img/Background.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="856" Width="1480"/>
+        <Rectangle HorizontalAlignment="Center" Height="705" VerticalAlignment="Center" Width="1334" StrokeThickness="0">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FFEAC2" Opacity="0.3"/>
             </Rectangle.Fill>
@@ -20,27 +20,27 @@
                 <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="5" Opacity="0.7"/>
             </Rectangle.Effect>
         </Rectangle>
-        <Image Source="img/JumlahAnakYatim.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="157" Width="166" Margin="342,90,0,0"/>
-        <Image Source="img/JumlahPanti.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="158" Width="255" Margin="50,120,0,0"/>
-        <Image Source="img/Kebaikan.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="105" Width="126" Margin="57,264,0,0"/>
-        <Image Source="img/Kontribusi.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="105" Width="126" Margin="371,264,0,0"/>
-        <Image Source="img/Solidaritas.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="105" Width="127" Margin="212,264,0,0"/>
-        <Label Content="Welcome to SharenCare" HorizontalAlignment="Left" Margin="47,30,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#E2E2E2" FontWeight="Bold">
+        <Image Source="img/JumlahAnakYatim.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="250" Width="262" Margin="612,259,0,0"/>
+        <Image Source="img/JumlahPanti.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="224" Width="431" Margin="141,292,0,0"/>
+        <Image Source="img/Kebaikan.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="182" Width="201" Margin="141,549,0,0"/>
+        <Image Source="img/Kontribusi.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="182" Width="201" Margin="670,549,0,0"/>
+        <Image Source="img/Solidaritas.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="182" Width="201" Margin="400,549,0,0"/>
+        <Label Content="Welcome to SharenCare" HorizontalAlignment="Left" Margin="141,72,0,0" VerticalAlignment="Top" FontSize="40" Foreground="#E2E2E2" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="1.5" Opacity="0.5"/>
             </Label.Effect>
         </Label>
-        <Label Content="Karena esensi dari hidup adalah berbagi." HorizontalAlignment="Left" Margin="48,62,0,0" VerticalAlignment="Top" FontSize="15" Foreground="#E2E2E2" FontWeight="Light">
+        <Label Content="Karena esensi dari hidup adalah berbagi." HorizontalAlignment="Left" Margin="141,135,0,0" VerticalAlignment="Top" FontSize="30" Foreground="#E2E2E2" FontWeight="Light">
             <Label.Effect>
                 <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="1.5" Opacity="0.5"/>
             </Label.Effect>
         </Label>
-        <Label Content="Apakah kamu tau?" HorizontalAlignment="Left" Margin="48,95,0,0" VerticalAlignment="Top" FontSize="15" Foreground="#E2E2E2" FontWeight="Light">
+        <Label Content="Apakah kamu tau?" HorizontalAlignment="Left" Margin="141,217,0,0" VerticalAlignment="Top" FontSize="30" Foreground="#E2E2E2" FontWeight="Light">
             <Label.Effect>
                 <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="1.5" Opacity="0.5"/>
             </Label.Effect>
         </Label>
-        <Button Content="Add Item" HorizontalAlignment="Left" Margin="581,222,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="30" Width="104" FontWeight="Bold" FontSize="16" Click="Button_Click">
+        <Button Content="Add Item" HorizontalAlignment="Left" Margin="1056,400,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="59" Width="198" FontWeight="Bold" FontSize="28" Click="Button_Click">
             <Button.Effect>
                 <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="1" Opacity="0.5" Direction="280"/>
             </Button.Effect>
@@ -51,7 +51,7 @@
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="{x:Type Button}">
-                                <Border Background="{TemplateBinding Background}" CornerRadius="15">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="30">
                                     <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                                 </Border>
                             </ControlTemplate>
@@ -60,12 +60,12 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Label Content="Ingin berbagi sekarang?" HorizontalAlignment="Left" Margin="553,176,0,0" VerticalAlignment="Top" FontSize="15" Foreground="#E2E2E2" FontWeight="Light">
+        <Label Content="Ingin berbagi sekarang?" HorizontalAlignment="Left" Margin="1000,321,0,0" VerticalAlignment="Top" FontSize="30" Foreground="#E2E2E2" FontWeight="Light">
             <Label.Effect>
                 <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="1.5" Opacity="0.5"/>
             </Label.Effect>
         </Label>
-        <Button Content="Log Out" HorizontalAlignment="Left" Margin="675,48,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="25" Width="74" FontWeight="Bold" FontSize="12" Click="ButtonLogOut_Click">
+        <Button Content="Log Out" HorizontalAlignment="Left" Margin="1171,85,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="50" Width="168" FontWeight="Bold" FontSize="25" Click="ButtonLogOut_Click">
             <Button.Effect>
                 <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="1" Opacity="0.5" Direction="280"/>
             </Button.Effect>
@@ -76,7 +76,7 @@
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="{x:Type Button}">
-                                <Border Background="{TemplateBinding Background}" CornerRadius="15">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="25">
                                     <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                                 </Border>
                             </ControlTemplate>
@@ -85,7 +85,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="ViewItem" Content="View Item" HorizontalAlignment="Left" Margin="581,266,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="30" Width="104" FontWeight="Bold" FontSize="16" Click="ViewItem_Click">
+        <Button x:Name="ViewItem" Content="View Item" HorizontalAlignment="Left" Margin="1056,488,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="57" Width="198" FontWeight="Bold" FontSize="28" Click="ViewItem_Click">
             <Button.Effect>
                 <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="1" Opacity="0.5" Direction="280"/>
             </Button.Effect>
@@ -96,7 +96,7 @@
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="{x:Type Button}">
-                                <Border Background="{TemplateBinding Background}" CornerRadius="15">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="30">
                                     <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                                 </Border>
                             </ControlTemplate>

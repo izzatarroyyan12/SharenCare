@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\
 SharenCare_cs
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\App.xaml
+C:\Users\pafams\snckontol\SharenCare_cs\App.xaml
 8-119512333
 
 16-1273001547
-201-474448361
+201-997847174
 AddItemPage.xaml;AdminDashPage.xaml;CustomerDashPage.xaml;HomePage.xaml;ListItemPage.xaml;LoginPage.xaml;MainWindow.xaml;RegisterPage.xaml;
 
-False
+True
 

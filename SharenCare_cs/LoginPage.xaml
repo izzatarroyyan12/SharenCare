@@ -5,16 +5,16 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SharenCare_cs"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="832.5" d:DesignWidth="1480"
       Title="LoginPage">
 
     <Grid>
-        <Image Source="img/Background.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="468" Width="800"/>
-        <Rectangle Fill="#FFEAC2" Margin="57,50,408,62" Opacity="0.3" RadiusX="30" RadiusY="30"/>
-        <Image Source="img/IconEmail.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="20" Width="20" Margin="77,161,0,0"/>
-        <Image Source="img/IconPassword.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="20" Width="20" Margin="77,202,0,0"/>
-        <Image Source="img/FotoAnak.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="220" Width="219" Margin="496,109,0,0"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="174,197,0,0" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
+        <Image Source="img/Background.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="870" Width="1480"/>
+        <Rectangle Fill="#FFEAC2" Margin="57,50,699,62" Opacity="0.3" RadiusX="30" RadiusY="30"/>
+        <Image Source="img/IconEmail.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="52" Width="57" Margin="114,288,0,0"/>
+        <Image Source="img/IconPassword.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="52" Width="57" Margin="114,379,0,0"/>
+        <Image Source="img/FotoAnak.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="359" Width="392" Margin="974,231,0,0"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="361,379,0,0" VerticalAlignment="Top" Width="375" Height="55" Opacity="0.5" FontSize="30">
             <PasswordBox.Style>
                 <Style TargetType="PasswordBox">
                     <Setter Property="Template">
@@ -32,8 +32,7 @@
                 </Style>
             </PasswordBox.Style>
         </PasswordBox>
-
-        <TextBox x:Name="usernameTextBox" HorizontalAlignment="Left" Margin="174,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
+        <TextBox x:Name="usernameTextBox" HorizontalAlignment="Left" Margin="363,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375" Height="55" Opacity="0.5" FontSize="30">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -51,12 +50,12 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <Label Content="Login to your account" HorizontalAlignment="Left" Margin="84,87,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#E2E2E2" FontWeight="Bold">
+        <Label Content="Login to your account" HorizontalAlignment="Left" Margin="105,123,0,0" VerticalAlignment="Top" FontSize="60" Foreground="#E2E2E2" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
             </Label.Effect>
         </Label>
-        <Button x:Name="LoginHome" Content="Login" HorizontalAlignment="Left" Margin="168,272,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="30" Width="90" Click="Login_Click" FontWeight="Bold" FontSize="16">
+        <Button x:Name="LoginHome" Content="Login" HorizontalAlignment="Left" Margin="309,507,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="64" Width="204" Click="Login_Click" FontWeight="Bold" FontSize="38">
             <Button.Effect>
                 <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="1" Opacity="0.5" Direction="280"/>
             </Button.Effect>
@@ -76,8 +75,8 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Label Content="Don't have an account?" HorizontalAlignment="Left" Margin="105,311,0,0" VerticalAlignment="Top" FontSize="12" Foreground="#E2E2E2" FontWeight="SemiBold"/>
-        <Button Content="Register here!" HorizontalAlignment="Left" Margin="245,315,0,0" VerticalAlignment="Top" FontSize="12" Width="74" Height="18" Click="Button_Click_1" Foreground="#FFEAC2" FontWeight="Bold">
+        <Label Content="Don't have an account?" HorizontalAlignment="Left" Margin="172,613,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#E2E2E2" FontWeight="SemiBold"/>
+        <Button Content="Register here!" HorizontalAlignment="Left" Margin="433,615,0,0" VerticalAlignment="Top" FontSize="25" Width="205" Height="41" Click="Button_Click_1" Foreground="#FFEAC2" FontWeight="Bold">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="#00000000 " />
@@ -100,7 +99,15 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Label Content="Username" HorizontalAlignment="Left" Margin="99,156,0,0" VerticalAlignment="Top" Foreground="#E2E2E2" FontWeight="SemiBold" FontSize="13"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="99,198,0,0" VerticalAlignment="Top" Foreground="#E2E2E2" FontWeight="SemiBold" FontSize="13"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="172,286,0,0" VerticalAlignment="Top" Foreground="#E2E2E2" FontWeight="SemiBold" FontSize="35">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="172,377,0,0" VerticalAlignment="Top" Foreground="#E2E2E2" FontWeight="SemiBold" FontSize="35">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
     </Grid>
 </Page>

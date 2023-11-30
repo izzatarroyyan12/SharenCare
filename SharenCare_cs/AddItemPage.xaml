@@ -5,13 +5,13 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SharenCare_cs"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="832.5" d:DesignWidth="1480"
       Title="AddItemPage">
 
     <Grid>
-        <Image Source="img/Background.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="468" Width="800"/>
-        <Rectangle Fill="#FFEAC2" Margin="225,24,228,29" Opacity="0.3" RadiusX="30" RadiusY="30"/>
-        <Button Content="Submit" HorizontalAlignment="Center" Margin="0,314,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="36" Width="90" FontWeight="Bold" FontSize="16" Click="Button_Click">
+        <Image Source="img/Background.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="856" Width="1480"/>
+        <Rectangle Fill="#FFEAC2" Margin="428,74,428,74" Opacity="0.3" RadiusX="30" RadiusY="30"/>
+        <Button Content="Submit" HorizontalAlignment="Center" Margin="0,616,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="55" Width="180" FontWeight="Bold" FontSize="32" Click="Button_Click">
             <Button.Effect>
                 <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="1" Opacity="0.5" Direction="280"/>
             </Button.Effect>
@@ -31,12 +31,12 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Label Content="Add Item" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#E2E2E2" FontWeight="Bold">
+        <Label Content="Add Item" HorizontalAlignment="Center" Margin="0,103,0,0" VerticalAlignment="Top" FontSize="60" Foreground="#E2E2E2" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
             </Label.Effect>
         </Label>
-        <TextBox x:Name="nameTB" HorizontalAlignment="Left" Margin="340,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="35" Opacity="0.5">
+        <TextBox x:Name="nameTB" HorizontalAlignment="Left" Margin="682,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="297" Height="47" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -54,7 +54,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="categoryTB" HorizontalAlignment="Left" Margin="340,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="35" Opacity="0.5">
+        <TextBox x:Name="categoryTB" HorizontalAlignment="Left" Margin="682,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="297" Height="47" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -72,7 +72,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="expireTB" HorizontalAlignment="Left" Margin="340,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="35" Opacity="0.5">
+        <TextBox x:Name="expireTB" HorizontalAlignment="Left" Margin="682,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="297" Height="47" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -90,7 +90,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="kuantitasTB" HorizontalAlignment="Left" Margin="340,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="35" Opacity="0.5">
+        <TextBox x:Name="kuantitasTB" HorizontalAlignment="Left" Margin="682,432,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="297" Height="47" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -108,7 +108,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="noteTB" HorizontalAlignment="Left" Margin="340,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="35" Opacity="0.5">
+        <TextBox x:Name="noteTB" HorizontalAlignment="Left" Margin="682,495,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="297" Height="47" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -126,11 +126,31 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <Label Content="Nama" HorizontalAlignment="Left" Margin="259,85,0,0" VerticalAlignment="Top" Height="30" Foreground="#FFFFFF" FontWeight="SemiBold"/>
-        <Label Content="Kategori" HorizontalAlignment="Left" Margin="259,125,0,0" VerticalAlignment="Top" Height="30" Foreground="#FFFFFF" FontWeight="SemiBold"/>
-        <Label Content="Expire Date" HorizontalAlignment="Left" Margin="259,164,0,0" VerticalAlignment="Top" Height="30" Foreground="#FFFFFF" FontWeight="SemiBold"/>
-        <Label Content="Kuantitas" HorizontalAlignment="Left" Margin="259,204,0,0" VerticalAlignment="Top" Height="30" Foreground="#FFFFFF" FontWeight="SemiBold"/>
-        <Label Content="Note" HorizontalAlignment="Left" Margin="259,245,0,0" VerticalAlignment="Top" Height="30" Foreground="#FFFFFF" FontWeight="SemiBold"/>
+        <Label Content="Nama" HorizontalAlignment="Left" Margin="507,234,0,0" VerticalAlignment="Top" Height="46" Foreground="#FFFFFF" FontWeight="SemiBold" FontSize="30" Width="94">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Kategori" HorizontalAlignment="Left" Margin="507,297,0,0" VerticalAlignment="Top" Height="54" Foreground="#FFFFFF" FontWeight="SemiBold" FontSize="30">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Expire Date" HorizontalAlignment="Left" Margin="507,360,0,0" VerticalAlignment="Top" Height="54" Foreground="#FFFFFF" FontWeight="SemiBold" FontSize="30">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Kuantitas" HorizontalAlignment="Left" Margin="507,423,0,0" VerticalAlignment="Top" Height="56" Foreground="#FFFFFF" FontWeight="SemiBold" FontSize="30">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Note" HorizontalAlignment="Left" Margin="507,486,0,0" VerticalAlignment="Top" Height="50" Foreground="#FFFFFF" FontWeight="SemiBold" FontSize="30">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
 
     </Grid>
 </Page>
