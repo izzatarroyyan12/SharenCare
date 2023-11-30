@@ -14,12 +14,12 @@
         <Image Source="img/IconEmail.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="20" Width="20" Margin="77,161,0,0"/>
         <Image Source="img/IconPassword.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="20" Width="20" Margin="77,202,0,0"/>
         <Image Source="img/FotoAnak.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="220" Width="219" Margin="496,109,0,0"/>
-        <TextBox x:Name="passwordTextBox" HorizontalAlignment="Left" Margin="174,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
-            <TextBox.Style>
-                <Style TargetType="TextBox">
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="174,197,0,0" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
+            <PasswordBox.Style>
+                <Style TargetType="PasswordBox">
                     <Setter Property="Template">
                         <Setter.Value>
-                            <ControlTemplate TargetType="TextBox">
+                            <ControlTemplate TargetType="PasswordBox">
                                 <Border Background="#7A7469" BorderThickness="1" CornerRadius="15" Padding="5">
                                     <Border.Effect>
                                         <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="3" Opacity="0.7" Direction="270"/>
@@ -30,8 +30,9 @@
                         </Setter.Value>
                     </Setter>
                 </Style>
-            </TextBox.Style>
-        </TextBox>
+            </PasswordBox.Style>
+        </PasswordBox>
+
         <TextBox x:Name="usernameTextBox" HorizontalAlignment="Left" Margin="174,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="30" Opacity="0.5">
             <TextBox.Style>
                 <Style TargetType="TextBox">

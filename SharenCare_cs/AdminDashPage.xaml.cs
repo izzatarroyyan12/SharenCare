@@ -58,9 +58,6 @@ namespace SharenCare_cs
                 // Fill the DataTable with data from the data adapter
                 dataAdapter.Fill(dataTable);
 
-                // Output the row count
-                System.Diagnostics.Debug.WriteLine($"Row Count: {dataTable.Rows.Count}");
-
                 // Set the DataTable as the ItemsSource for the DataGrid
                 dataGrid.ItemsSource = dataTable.DefaultView;
             }
