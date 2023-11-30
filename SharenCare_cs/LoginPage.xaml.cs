@@ -23,7 +23,7 @@ namespace SharenCare_cs
         private void Login_Click(object sender, RoutedEventArgs e)
         {
             string enteredUsername = usernameTextBox.Text;
-            string enteredPassword = passwordTextBox.Text;
+            string enteredPassword = passwordBox.Password;
 
             User authenticatedUser = user.AuthenticateUser(enteredUsername, enteredPassword);
 
