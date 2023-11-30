@@ -25,27 +25,14 @@ namespace SharenCare_cs
             string enteredUsername = usernameTextBox.Text;
             string enteredPassword = passwordTextBox.Text;
 
-            bool isAuthenticated = user.Login(enteredUsername, enteredPassword);
+            User authenticatedUser = user.AuthenticateUser(enteredUsername, enteredPassword);
 
-            ShowLoginResult(isAuthenticated, enteredUsername, enteredPassword);
-        }
-
-        private void ShowLoginResult(bool isAuthenticated, string enteredUsername, string enteredPassword)
-        {
-            if (isAuthenticated)
+            if (authenticatedUser != null)
             {
                 MessageBox.Show("Login successful.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 // Redirect based on user role
-                if (enteredUsername.ToLower() == "admin" && enteredPassword == "admin")
-                {
-                    // Admin login, redirect to AdminDashPage
-                    this.mainWindow.Content = new AdminDashPage(this.mainWindow);
-                }
-                else
-                {
-                    this.mainWindow.Content = new CustomerDashPage(this.mainWindow, enteredUsername);
-                }
+                authenticatedUser.RedirectToDashboard(this.mainWindow);
             }
             else
             {
