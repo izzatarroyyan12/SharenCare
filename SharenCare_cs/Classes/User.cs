@@ -1,5 +1,6 @@
 ﻿using Npgsql;
 using NpgsqlTypes;
+using SharenCare_cs.Classes.SharenCare_cs;
 using System;
 using System.Data;
 using System.Windows;
@@ -120,11 +121,33 @@ namespace SharenCare_cs
             }
         }
 
+        public virtual void RedirectToDashboard(MainWindow mainWindow)
+        {
+            mainWindow.Content = new CustomerDashPage(mainWindow, "defaultUsername");
+        }
+
         private void CloseConnection()
         {
             if (connection.State == ConnectionState.Open)
             {
                 connection.Close();
+            }
+        }
+
+        public User AuthenticateUser(string enteredUsername, string enteredPassword)
+        {
+            if (enteredUsername.ToLower() == "admin" && enteredPassword == "admin")
+            {
+                return new AdminUser(connection);
+            }
+
+            if (Login(enteredUsername, enteredPassword))
+            {
+                return new User(connection);
+            }
+            else
+            {
+                return null;
             }
         }
     }
