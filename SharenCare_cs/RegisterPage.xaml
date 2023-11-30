@@ -5,13 +5,13 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SharenCare_cs"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="832.5" d:DesignWidth="1480"
       Title="RegisterPage">
 
     <Grid>
-        <Image Source="img/Background.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="468" Width="800"/>
-        <Rectangle Fill="#FFEAC2" Margin="398,33,55,10" Opacity="0.3" RadiusX="30" RadiusY="30"/>
-        <Button Content="Create Account" HorizontalAlignment="Left" Margin="498,344,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="36" Width="136" Click="CreateAccount_Click" FontWeight="Bold" FontSize="16">
+        <Image Source="img/Background.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="833" Width="1481"/>
+        <Rectangle Fill="#FFEAC2" Margin="690,54,63,64" Opacity="0.3" RadiusX="30" RadiusY="30"/>
+        <Button Content="Create Account" HorizontalAlignment="Left" Margin="927,629,0,0" VerticalAlignment="Top" RenderTransformOrigin="1,1" Height="64" Width="253" Click="CreateAccount_Click" FontWeight="Bold" FontSize="30">
             <Button.Effect>
                 <DropShadowEffect Color="Black" ShadowDepth="1" BlurRadius="1" Opacity="0.5" Direction="280"/>
             </Button.Effect>
@@ -31,13 +31,13 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Label Content="Register" HorizontalAlignment="Left" Margin="513,47,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#E2E2E2" FontWeight="Bold">
+        <Label Content="Register" HorizontalAlignment="Left" Margin="933,87,0,0" VerticalAlignment="Top" FontSize="60" Foreground="#E2E2E2" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
             </Label.Effect>
         </Label>
-        <Label Content="Already have an account?" HorizontalAlignment="Left" Margin="458,307,0,0" VerticalAlignment="Top" FontSize="12" Foreground="#E2E2E2" FontWeight="SemiBold"/>
-        <Button x:Name="LoginLabel" Content="Login here!" HorizontalAlignment="Left" Margin="599,311,0,0" VerticalAlignment="Top" FontSize="12" Width="86" Height="18" Click="Button_Click_1" FontWeight="Bold">
+        <Label Content="Already have an account?" HorizontalAlignment="Left" Margin="822,559,0,0" VerticalAlignment="Top" FontSize="25" Foreground="#E2E2E2" FontWeight="SemiBold"/>
+        <Button x:Name="LoginLabel" Content="Login here!" HorizontalAlignment="Left" Margin="1125,562,0,0" VerticalAlignment="Top" FontSize="25" Width="140" Height="38" Click="Button_Click_1" FontWeight="Bold">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="#00000000 " />
@@ -60,7 +60,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <TextBox x:Name="usernameTB" HorizontalAlignment="Left" Margin="523,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="35" Opacity="0.5">
+        <TextBox x:Name="usernameTB" HorizontalAlignment="Left" Margin="1001,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Height="44" Opacity="0.5" FontSize="20">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -78,7 +78,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="emailTB" HorizontalAlignment="Left" Margin="523,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="35" Opacity="0.5">
+        <TextBox x:Name="emailTB" HorizontalAlignment="Left" Margin="1001,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Height="44" Opacity="0.5" FontSize="20">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -96,7 +96,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="passwordTB" HorizontalAlignment="Left" Margin="523,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="35" Opacity="0.5">
+        <TextBox x:Name="passwordTB" HorizontalAlignment="Left" Margin="1001,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Height="44" Opacity="0.5" FontSize="20">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -114,7 +114,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="displayNameTB" HorizontalAlignment="Left" Margin="523,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="35" Opacity="0.5">
+        <TextBox x:Name="displayNameTB" HorizontalAlignment="Left" Margin="1001,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Height="44" Opacity="0.5" FontSize="20">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -132,7 +132,7 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <TextBox x:Name="locationTB" HorizontalAlignment="Left" Margin="523,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="35" Opacity="0.5">
+        <TextBox x:Name="locationTB" HorizontalAlignment="Left" Margin="1001,462,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Height="44" Opacity="0.5" FontSize="20">
             <TextBox.Style>
                 <Style TargetType="TextBox">
                     <Setter Property="Template">
@@ -150,11 +150,31 @@
                 </Style>
             </TextBox.Style>
         </TextBox>
-        <Label Content="Username" HorizontalAlignment="Left" Margin="432,102,0,0" VerticalAlignment="Top" Height="30" Foreground="#FFFFFF" FontWeight="SemiBold"/>
-        <Label Content="Email" HorizontalAlignment="Left" Margin="432,142,0,0" VerticalAlignment="Top" Height="30" Foreground="#FFFFFF" FontWeight="SemiBold"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="432,181,0,0" VerticalAlignment="Top" Height="30" Foreground="#FFFFFF" FontWeight="SemiBold"/>
-        <Label Content="Display Name" HorizontalAlignment="Left" Margin="432,222,0,0" VerticalAlignment="Top" Height="30" Foreground="#FFFFFF" FontWeight="SemiBold"/>
-        <Label Content="Location" HorizontalAlignment="Left" Margin="432,262,0,0" VerticalAlignment="Top" Height="30" Foreground="#FFFFFF" FontWeight="SemiBold"/>
-        <Image Source="img/FotoAnak.png" HorizontalAlignment="Left" VerticalAlignment="Center" Height="220" Width="219" Margin="79,0,0,0"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="791,201,0,0" VerticalAlignment="Top" Height="55" Foreground="#FFFFFF" FontWeight="SemiBold" FontSize="30">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="791,264,0,0" VerticalAlignment="Top" Height="54" Foreground="#FFFFFF" FontWeight="SemiBold" FontSize="30">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="791,326,0,0" VerticalAlignment="Top" Height="56" Foreground="#FFFFFF" FontWeight="SemiBold" FontSize="30">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Display Name" HorizontalAlignment="Left" Margin="791,390,0,0" VerticalAlignment="Top" Height="57" Foreground="#FFFFFF" FontWeight="SemiBold" FontSize="30">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Location" HorizontalAlignment="Left" Margin="791,453,0,0" VerticalAlignment="Top" Height="45" Foreground="#FFFFFF" FontWeight="SemiBold" FontSize="30">
+            <Label.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Opacity="0.5"/>
+            </Label.Effect>
+        </Label>
+        <Image Source="img/FotoAnak.png" HorizontalAlignment="Left" VerticalAlignment="Center" Height="359" Width="392" Margin="153,0,0,0"/>
     </Grid>
 </Page>

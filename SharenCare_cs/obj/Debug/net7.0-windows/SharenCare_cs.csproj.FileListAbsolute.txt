@@ -143,3 +143,47 @@ D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\bin\Debug\net7.0-windo
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\AddItemPage.baml
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\CustomerDashPage.baml
 D:\Kuliah\Junior Project\Project\SharenCare\SharenCare_cs\obj\Debug\net7.0-windows\ListItemPage.baml
+C:\Users\pafams\snckontol\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.exe
+C:\Users\pafams\snckontol\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.deps.json
+C:\Users\pafams\snckontol\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.runtimeconfig.json
+C:\Users\pafams\snckontol\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.dll
+C:\Users\pafams\snckontol\SharenCare_cs\bin\Debug\net7.0-windows\SharenCare_cs.pdb
+C:\Users\pafams\snckontol\SharenCare_cs\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\pafams\snckontol\SharenCare_cs\bin\Debug\net7.0-windows\Npgsql.dll
+C:\Users\pafams\snckontol\SharenCare_cs\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Users\pafams\snckontol\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\pafams\snckontol\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\pafams\snckontol\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\pafams\snckontol\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\pafams\snckontol\SharenCare_cs\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.csproj.AssemblyReference.cache
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\AddItemPage.g.cs
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashPage.g.cs
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\CustomerDashPage.g.cs
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\HomePage.g.cs
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\ListItemPage.g.cs
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\LoginPage.g.cs
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\RegisterPage.g.cs
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs_MarkupCompile.cache
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs_MarkupCompile.lref
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\AddItemPage.baml
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\AdminDashPage.baml
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\CustomerDashPage.baml
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\HomePage.baml
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\ListItemPage.baml
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\LoginPage.baml
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\RegisterPage.baml
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.g.resources
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.AssemblyInfoInputs.cache
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.AssemblyInfo.cs
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.csproj.CoreCompileInputs.cache
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.csproj.CopyComplete
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.dll
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\refint\SharenCare_cs.dll
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.pdb
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\SharenCare_cs.genruntimeconfig.cache
+C:\Users\pafams\snckontol\SharenCare_cs\obj\Debug\net7.0-windows\ref\SharenCare_cs.dll
