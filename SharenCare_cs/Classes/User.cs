@@ -1,91 +1,154 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Npgsql;
+using NpgsqlTypes;
+using SharenCare_cs.Classes.SharenCare_cs;
+using System;
+using System.Data;
+using System.Windows;
 
-namespace SharenCare_cs.Classes
+namespace SharenCare_cs
 {
     public class User
     {
-        private static int nextID = 1;
+        private readonly NpgsqlConnection connection;
 
-        private int id_;
-        private string username_;
-        private string email_;
-        private string password_;
-        private string displayName_;
-        private string location_;
-        private bool loggedIn_;
-
-        public int Id
+        public User(NpgsqlConnection connection)
         {
-            get { return id_; }
-            set { id_ = value; }
+            this.connection = connection;
         }
 
-        public string Username
+        public bool Register(string username, string displayName, string email, string location, string password)
         {
-            get { return username_; }
-            set { username_ = value; }
-        }
+            try
+            {
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+                }
 
-        public string Email
-        {
-            get { return email_; }
-            set { email_ = value; }
-        }
+                using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT insert_user(@_userName, @_displayName, @_email, @_location, @_password)", connection))
+                {
+                    cmd.Parameters.AddWithValue("@_userName", username);
+                    cmd.Parameters.AddWithValue("@_displayName", displayName);
+                    cmd.Parameters.AddWithValue("@_email", email);
+                    cmd.Parameters.AddWithValue("@_location", location);
+                    cmd.Parameters.AddWithValue("@_password", password);
 
-        public string Password
-        {
-            get { return password_; }
-            set { password_ = value; }
-        }
+                    int result = (int)cmd.ExecuteScalar();
 
-        public string DisplayName
-        {
-            get { return displayName_; }
-            set { displayName_ = value; }
-        }
-
-        public string Location
-        {
-            get { return location_; }
-            set { location_ = value; }
-        }
-
-        public bool LoggedIn
-        {
-            get { return loggedIn_; }
-            private set { loggedIn_ = value; }
-        }
-
-        public User(int id, string username, string email, string password, string displayName, string location)
-        {
-            this.Id = nextID;
-            nextID++;
-            this.Username = username;
-            this.Email = email;
-            this.Password = password;
-            this.DisplayName = displayName;
-            this.Location = location;
-            this.LoggedIn = false;
-        }
-
-        public User Register(string username, string email, string password, string displayName, string location)
-        {
-            return null;
+                    return result == 1; // If result is 1, the user was registered successfully.
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+            finally
+            {
+                CloseConnection();
+            }
         }
 
         public bool Login(string username, string password)
         {
-            return true;
+            try
+            {
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+                }
+
+                using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT COUNT(*) FROM snc_users WHERE username = @username AND password = @password", connection))
+                {
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                    return count > 0; // If count is greater than 0, the user with the provided username and password exists.
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+            finally
+            {
+                CloseConnection();
+            }
         }
 
-        public void Logout()
+        public string GetUserID(string enteredUsername)
         {
-            // Implementasi logika logout
-            LoggedIn = false;
+            try
+            {
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+                }
+
+                using (NpgsqlCommand cmd = new NpgsqlCommand())
+                {
+                    cmd.Connection = connection;
+
+                    string sql = "SELECT userid FROM snc_users WHERE username = @EnteredUsername";
+                    cmd.CommandText = sql;
+
+                    cmd.Parameters.AddWithValue("@EnteredUsername", NpgsqlDbType.Varchar, enteredUsername);
+
+                    using (NpgsqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return reader["userid"].ToString();
+                        }
+                        else
+                        {
+                            return null;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return null;
+            }
+            finally
+            {
+                CloseConnection();
+            }
+        }
+
+        public virtual void RedirectToDashboard(MainWindow mainWindow)
+        {
+            mainWindow.Content = new CustomerDashPage(mainWindow, "defaultUsername");
+        }
+
+        private void CloseConnection()
+        {
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
+
+        public User AuthenticateUser(string enteredUsername, string enteredPassword)
+        {
+            if (enteredUsername.ToLower() == "admin" && enteredPassword == "admin")
+            {
+                return new AdminUser(connection);
+            }
+
+            if (Login(enteredUsername, enteredPassword))
+            {
+                return new User(connection);
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

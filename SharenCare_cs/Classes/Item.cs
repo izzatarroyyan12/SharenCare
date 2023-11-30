@@ -1,31 +1,60 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Npgsql;
+using NpgsqlTypes;
+using System;
+using System.Data;
+using System.Windows;
 
-namespace SharenCare_cs.Classes
+namespace SharenCare_cs
 {
-    class Item
+    public class Item
     {
-        public int id { get; set; }
-        public string name { get; set; }
-        public string category { get; set; }
-        public int quantity { get; set; }
-        public DateTime expiryDate { get; set; }
-        public Donor donor { get; set; }
+        private readonly NpgsqlConnection connection;
 
-        // Constructor
-        public Item(int id, string name, string category, int quantity, DateTime expiryDate, Donor donor)
+        public Item(NpgsqlConnection connection)
         {
-            // Use the property names to assign values
-            this.id = id;
-            this.name = name;
-            this.category = category;
-            this.quantity = quantity;
-            this.expiryDate = expiryDate;
-            this.donor = donor;
+            this.connection = connection;
         }
 
+        public bool Donate(string itemName, string itemCategory, DateTime expireDate, int quantity, string donor, string note)
+        {
+            try
+            {
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+                }
+
+                using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT insert_item(@_itemname, @_itemcategory, @_expiredate, @_quantity, @_donor, @_note )", connection))
+                {
+                    cmd.Parameters.AddWithValue("@_itemname", itemName);
+                    cmd.Parameters.AddWithValue("@_itemcategory", itemCategory);
+                    cmd.Parameters.AddWithValue("@_expiredate", NpgsqlDbType.Date, expireDate);
+                    cmd.Parameters.AddWithValue("@_quantity", NpgsqlDbType.Integer, quantity);
+                    cmd.Parameters.AddWithValue("@_donor", donor);
+                    cmd.Parameters.AddWithValue("@_note", note);
+
+                    int result = (int)cmd.ExecuteScalar();
+
+                    return result == 1; // If result is 1, the item was donated successfully.
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+            finally
+            {
+                CloseConnection();
+            }
+        }
+
+        private void CloseConnection()
+        {
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
     }
 }
